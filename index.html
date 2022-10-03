@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/ffavicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Воротные системы</title>
+</head>
+<body> 
+
+    <!-- Навигационное меню -->
+    <nav class="nav">
+        <div class="nav-block">
+            <a href="index.html"><picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <img src="img/logo.png" loading="lazy" class="nav-block__logo">
+            </picture></a>
+            <ul class="nav-block-ul">
+                <li class="nav-block-ul-menu">
+                    Производство ворот<img src="img/arrow-right.svg">
+                    <ul class="nav-block-ul-menu-submenu">
+                        <li><a href="rollback-gates.html">Откатные ворота</a></li>
+                        <li><a href="swing -gates.html">Распашные ворота</a></li>
+                    </ul>
+                </li>
+                <li class="nav-block-ul-menu">
+                    Ворота Doorhan<img src="img/arrow-right.svg">
+                    <ul class="nav-block-ul-menu-submenu">
+                        <li><a href="sliding-gates.html">Откатные</a></li>
+                        <li><a href="open-gates.html">Распашные</a></li>
+                        <li><a href="section-doorhan.html">Секционные</a></li>
+                        <li><a href="rolgates-doorhan.html">Рольворота</a></li>
+                        <li><a href="industrial-gates.html">Промышленные</a></li>
+                        <li><a href="window-shutters.html">Роллеты на окна</a></li>
+                    </ul>
+                </li>
+                <li><a href="#form">Замер</a></li>
+                <li><a href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <span class="nav-block__tel">
+                <a href="tel: +78612139179">
+                    <img src="img/tel.svg">8 (861) 213-91-79
+                </a>
+            </span>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="nav-block__button">Заказать звонок</button>
+            <div class="nav-block__burger"><div id="burger">
+                <span class="line-1 line"></span><span class="line-2 line"></span><span class="line-3 line"></span>
+            </div></div>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="menu">
+        <ul class="menu-listing">
+            <li class="menu-listing-menu">
+                Производство ворот<img src="img/arrow-right.svg" class="gates-submenu__arrow">
+            </li>
+            <ul class="menu-listing-menu-submenu">
+                <li><a href="rollback-gates.html">Откатные ворота</a></li>
+                <li><a href="swing -gates.html">Распашные ворота</a></li>
+            </ul>
+            <li class="menu-listing-menu">
+                Ворота Doorhan<img src="img/arrow-right.svg" class="gates-submenu__arrow">
+            </li>
+            <ul class="menu-listing-menu-submenu">
+                <li><a href="sliding-gates.html">Откатные</a></li>
+                <li><a href="open-gates.html">Распашные</a></li>
+                <li><a href="section-doorhan.html">Секционные</a></li>
+                <li><a href="rolgates-doorhan.html">Рольворота</a></li>
+                <li><a href="industrial-gates.html">Промышленные</a></li>
+                <li><a href="window-shutters.html">Роллеты на окна</a></li>
+            </ul>
+            <li><a class="menu-listing-menu__link" href="#form">Замер</a></li>
+            <li><a class="menu-listing-menu__link" href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+            <li><a class="menu-listing-menu__link" href="#contact">Контакты</a></li>
+        </ul>
+        <div class="menu-contact">
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-tel.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Телефон:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-geo.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Адрес:</span>
+                    <span class="menu-contact-grid-info__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-mail.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Почта:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-clock.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">График работы:</span>
+                    <span class="menu-contact-grid-info__subtitle">Производственный цех: c 8:00 до 17:00 Операторы: c 8:00 до 20:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Главная -->
+    <header class="company hero">
+        <div class="company-voln">
+            <picture>
+                <source srcset="img/volna-header.webp" type="image/webp">
+                <img src="img/volna-header.png" loading="lazy" class="company-voln__img">
+            </picture>
+        </div>
+        <div class="company-chb">
+            <picture>
+                <source srcset="img/chb.webp" type="image/webp">
+                <img src="img/chb.png" loading="lazy" class="company-chb__img">
+            </picture>
+        </div>
+        <div class="company-dor wow fadeIn">
+            <picture>
+                <source srcset="img/dor.webp" type="image/webp">
+                <img src="img/dor.png" loading="lazy" class="company-dor__img">
+            </picture>
+        </div>
+        <div class="company-block wow fadeIn">
+            <div class="page--title company-block__title">Гарантируем качество</div>
+            <div class="page--subtitle company-block__subtitle">Изготавливаем все известные типы ворот, под заполнение<br>любыми типами материалов</div>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="page--botton">Отправить заявку</button>
+            <div class="company-block-video">
+                <span class="company-block-video-grid">
+                    <a href="#">
+                        <picture>
+                            <source srcset="img/header-video.webp" type="image/webp">
+                            <img src="img/header-video.png" loading="lazy" class="company-block-video-grid__image">
+                        </picture>
+                        <img src="img/play.svg" class="company-block-video-grid__play">
+                    </a>
+                    <div class="company-block-video-grid-info">
+                        <div class="company-block-video-grid-info__title">Давайте познакомимся</div>
+                        <div class="company-block-video-grid-info__subtitle">Следите за работой нашей<br>
+                            компании <span>онлайн</span>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="company-block-icons">
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/home.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">4 производственных<br>цеха в крае</div>
+                </div>
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/pol.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">Большой выбор<br>полотен</div>
+                </div>
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/year.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">3 года гарантии<br>на автоматику</div>
+                </div>
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/price.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">Лучшие цена<br>и качество в регионе</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Ворота -->
+    <section class="gates" data-bg="img/volna.png" data-bg-webp="img/volna.webp">
+        <div class="page--title gates__title wow fadeIn">Ворота из любых материалов по вашим эскизам</div>
+        <div class="page--subtitle gates__subtitle wow fadeIn">У нас в наличии все образцы материалов, комплектующих и автоматики</div>
+        <div class="gates-block">
+            <div class="gates-block-grid wow fadeIn">
+                <div class="gates-block-grid__title">Откатные ворота</div>
+                <a href="rollback-gates.html"><button class="gates-block-grid__button">Подробнее о товаре</button></a>
+                <picture>
+                    <source srcset="img/vor-1.webp" type="image/webp">
+                    <img src="img/vor-1.png" loading="lazy" class="gates-block-grid__image">
+                </picture>
+            </div>
+            <div class="gates-block-grid wow fadeIn">
+                <div class="gates-block-grid__title">Откатные на консоли</div>
+                <a href="rollback-gates.html"><button class="gates-block-grid__button">Подробнее о товаре</button></a>
+                <picture>
+                    <source srcset="img/vor-2.webp" type="image/webp">
+                    <img src="img/vor-2.png" loading="lazy" class="gates-block-grid__image">
+                </picture>
+            </div>
+            <div class="gates-block-grid wow fadeIn">
+                <div class="gates-block-grid__title">Телескопические откатные</div>
+                <a href="rollback-gates.html"><button class="gates-block-grid__button">Подробнее о товаре</button></a>
+                <picture>
+                    <source srcset="img/vor-3.webp" type="image/webp">
+                    <img src="img/vor-3.png" loading="lazy" class="gates-block-grid__image">
+                </picture>
+            </div>
+            <div class="gates-block-grid wow fadeIn">
+                <div class="gates-block-grid__title">Распашные гармошки</div>
+                <a href="swing -gates.html"><button class="gates-block-grid__button">Подробнее о товаре</button></a>
+                <picture>
+                    <source srcset="img/vor-4.webp" type="image/webp">
+                    <img src="img/vor-4.png" loading="lazy" class="gates-block-grid__image">
+                </picture>
+            </div>
+            <div class="gates-block-grid wow fadeIn">
+                <div class="gates-block-grid__title">Распашные гаражные</div>
+                <a href="swing -gates.html"><button class="gates-block-grid__button">Подробнее о товаре</button></a>
+                <picture>
+                    <source srcset="img/vor-5.webp" type="image/webp">
+                    <img src="img/vor-5.png" loading="lazy" class="gates-block-grid__image">
+                </picture>
+            </div>
+            <div class="gates-block-grid wow fadeIn">
+                <div class="gates-block-grid__title">Распашные уличные</div>
+                <a href="swing -gates.html"><button class="gates-block-grid__button">Подробнее о товаре</button></a>
+                <picture>
+                    <source srcset="img/vor-6.webp" type="image/webp">
+                    <img src="img/vor-6.png" loading="lazy" class="gates-block-grid__image">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наполнители -->
+    <section class="fillers">
+        <div class="fillers-block wow fadeIn">
+            <div class="page--title fillers-block__title">большой выбор наполнений для ваших работ </div>
+            <div class="fillers-block-slider">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_1.webp" type="image/webp">
+                                    <img src="img/filling_1.jpg" loading="lazy">
+                                </picture>
+                                <span>Каркас ворот (без наполнения)</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_2.webp" type="image/webp">
+                                    <img src="img/filling_2.jpg" loading="lazy">
+                                </picture>
+                                <span>Металлпрофиль</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_3.webp" type="image/webp">
+                                    <img src="img/filling_3.jpg" loading="lazy">
+                                </picture>
+                                <span>Евроштакетник</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_4.webp" type="image/webp">
+                                    <img src="img/filling_4.jpg" loading="lazy">
+                                </picture>
+                                <span>Еврожалюзи</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_5.webp" type="image/webp">
+                                    <img src="img/filling_5.jpg" loading="lazy">
+                                </picture>
+                                <span>Ламель RH77</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_6.webp" type="image/webp">
+                                    <img src="img/filling_6.jpg" loading="lazy">
+                                </picture>
+                                <span>Сэндвич-панель</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_7.webp" type="image/webp">
+                                    <img src="img/filling_7.jpg" loading="lazy">
+                                </picture>
+                                <span>Евросетка</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_8.webp" type="image/webp">
+                                    <img src="img/filling_8.jpg" loading="lazy">
+                                </picture>
+                                <span>Художественная резка</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_9.webp" type="image/webp">
+                                    <img src="img/filling_9.jpg" loading="lazy">
+                                </picture>
+                                <span>Сайдинг</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_10.webp" type="image/webp">
+                                    <img src="img/filling_10.jpg" loading="lazy">
+                                </picture>
+                                <span>Решетка из профильной трубы</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/filling_11.webp" type="image/webp">
+                                    <img src="img/filling_11.jpg" loading="lazy">
+                                </picture>
+                                <span>По Вашему эскизу</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Лидер продаж -->
+    <section class="doorhan">
+        <div class="doorhan-block">
+            <div class="page--title doorhan-block__title wow fadeIn">БЫТОВЫЕ И ПРОМЫШЛЕННЫЕ ВОРОТА И ДВЕРИ КОНЦЕРНА</div>
+            <picture class="doorhan-block-img wow fadeIn">
+                <source srcset="img/doorHan.webp" type="image/webp">
+                <img src="img/doorHan.png" loading="lazy" class="doorhan-block-img__logo">
+            </picture>
+            <div class="page--subtitle doorhan-block__subtitle wow fadeIn">Компания “Воротные системы” - лидер продаж продукции Doorhan на территории Краснодарского края</div>
+            <div class="doorhan-block-grid">
+                <div class="doorhan-block-grid-big doorhan-block-grid-content doorhan-block-grid-big-1 wow fadeIn" data-bg="img/art-grid-1.png" data-bg-webp="img/art-grid-1.webp">
+                    <picture>
+                        <source srcset="img/acts.webp" type="image/webp">
+                        <img src="img/acts.png" loading="lazy">
+                    </picture>
+                    <span class="doorhan-block-grid-big__title">Откатные ворота</span>
+                    <span class="doorhan-block-grid-big__subtitle">У нас опытные монтажные бригады, которые знают все нюансы надежной установки ворот и автоматики</span>
+                    <span class="doorhan-block-grid-big__link"><a href="sliding-gates.html" class="page--link">Подробнее</a></span>
+                </div>
+                <div class="doorhan-block-grid-small doorhan-block-grid-content wow fadeIn">
+                    <picture>
+                        <source srcset="img/art-grid-2.webp" type="image/webp">
+                        <img src="img/art-grid-2.png" loading="lazy">
+                    </picture>
+                    <div class="doorhan-block-grid-small-text">
+                        <span class="doorhan-block-grid-small-text__title">Распашные ворота</span>
+                        <span class="doorhan-block-grid-small-text__subtitle">У нас опытные монтажные<br>бригады, которые знают все<br>нюансы надежной установки<br>ворот и автоматики</span>
+                        <span class="doorhan-block-grid-small-text__link"><a href="open-gates.html" class="page--link">Подробнее</a></span>
+                    </div>
+                </div>
+                <div class="doorhan-block-grid-small doorhan-block-grid-content wow fadeIn">
+                    <picture>
+                        <source srcset="img/art-grid-3.webp" type="image/webp">
+                        <img src="img/art-grid-3.png" loading="lazy">
+                    </picture>
+                    <div class="doorhan-block-grid-small-text">
+                        <span class="doorhan-block-grid-small-text__title">Секционные ворота</span>
+                        <span class="doorhan-block-grid-small-text__subtitle">У нас опытные монтажные<br>бригады, которые знают все<br>нюансы надежной установки<br>ворот и автоматики</span>
+                        <span class="doorhan-block-grid-small-text__link"><a href="section-doorhan.html" class="page--link">Подробнее</a></span>
+                    </div>
+                </div>
+                <div class="doorhan-block-grid-small doorhan-block-grid-content wow fadeIn">
+                    <picture>
+                        <source srcset="img/art-grid-4.webp" type="image/webp">
+                        <img src="img/art-grid-4.png" loading="lazy">
+                    </picture>
+                    <div class="doorhan-block-grid-small-text">
+                        <span class="doorhan-block-grid-small-text__title">Рольворота</span>
+                        <span class="doorhan-block-grid-small-text__subtitle">У нас опытные монтажные<br>бригады, которые знают все<br>нюансы надежной установки<br>ворот и автоматики</span>
+                        <span class="doorhan-block-grid-small-text__link"><a href="rolgates-doorhan.html" class="page--link">Подробнее</a></span>
+                    </div>
+                </div>
+                <div class="doorhan-block-grid-small doorhan-block-grid-content wow fadeIn">
+                    <picture>
+                        <source srcset="img/art-grid-7.webp" type="image/webp">
+                        <img src="img/art-grid-7.png" loading="lazy">
+                    </picture>
+                    <div class="doorhan-block-grid-small-text">
+                        <span class="doorhan-block-grid-small-text__title">Промышленные ворота</span>
+                        <span class="doorhan-block-grid-small-text__subtitle">У нас опытные монтажные<br>бригады, которые знают все<br>нюансы надежной установки<br>ворот и автоматики</span>
+                        <span class="doorhan-block-grid-small-text__link"><a href="industrial-gates.html" class="page--link">Подробнее</a></span>
+                    </div>
+                </div>
+                <div class="doorhan-block-grid-big doorhan-block-grid-content doorhan-block-grid-big-2 wow fadeIn" data-bg="img/art-grid-6.png" data-bg-webp="img/art-grid-6.webp">
+                    <picture>
+                        <source srcset="img/acts.webp" type="image/webp">
+                        <img src="img/acts.png" loading="lazy">
+                    </picture>
+                    <span class="doorhan-block-grid-big__title">Роллеты на окна</span>
+                    <span class="doorhan-block-grid-big__subtitle">У нас опытные монтажные бригады, которые знают все нюансы надежной установки ворот и автоматики</span>
+                    <span class="doorhan-block-grid-big__link"><a href="window-shutters.html" class="page--link">Подробнее</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="service">
+        <div class="service-block">
+            <div class="page--title service-block__title wow fadeIn">также мы предоставляем услуги</div>
+            <div class="page--subtitle service-block__subtitle wow fadeIn">У нас в наличии все образцы материалов, комплектующих и автоматики</div>
+            <div class="service-block-grid">
+                <div class="service-block-grid-elem wow fadeIn">
+                    <picture>
+                        <source srcset="img/section-2_1.webp" type="image/webp">
+                        <img src="img/section-2_1.png" loading="lazy" class="service-block-grid-elem__image">
+                    </picture>
+                    <div class="service-block-grid-elem-text">
+                        <div class="service-block-grid-elem-text__title">Плазменная резка</div>
+                        <div class="service-block-grid-elem-text__subtitle">Художественная резка и декоративные изделия</div>
+                        <div class="service-block-grid-elem-text__link"><span class="page--link">Подробнее</span></div>
+                    </div>
+                </div>
+                <div class="service-block-grid-elem wow fadeIn">
+                    <picture>
+                        <source srcset="img/section-2_2.webp" type="image/webp">
+                        <img src="img/section-2_2.png" loading="lazy" class="service-block-grid-elem__image">
+                    </picture>
+                    <div class="service-block-grid-elem-text">
+                        <div class="service-block-grid-elem-text__title">Поликарбонатные роллеты</div>
+                        <div class="service-block-grid-elem-text__subtitle">Официальный представитель ПРОЗА на территории края</div>
+                        <div class="service-block-grid-elem-text__link"><span class="page--link">Подробнее</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Договор -->
+    <section class="contract" data-bg="img/volna.png" data-bg-webp="img/volna.webp">
+        <div class="contract-block">
+            <div class="page--title contract-block__title wow fadeIn">работаем открыто</div>
+            <div class="page--subtitle contract-block__subtitle wow fadeIn">В договоре мы фиксируем окончательную стоимость изделия и монтажа до начала работ</div>
+            <div class="contract-block-listing wow fadeIn" data-bg="img/dogovor.png" data-bg-webp="img/dogovor.webp">
+                <div class="contract-block-listing-elem wow fadeIn">
+                    <div class="contract-block-listing-elem__title">Предоставляем гарантии<br>на свои услуги</div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/1 year.svg">
+                        <span>1 год</span> на воротное полотно
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/3 year.svg">
+                        <span>3 года</span> на автоматику
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/6 month.svg">
+                        <span>6 месяцев</span> на монтажные работы
+                    </div>
+                </div>
+                <div class="contract-block-listing-elem wow fadeIn">
+                    <div class="contract-block-listing-elem__title">Предоставляем полный<br>пакет документов</div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/talon.svg">
+                        Гарантийный талон
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/akRab.svg">
+                        Акт выполненных работ
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/tovar.svg">
+                        Товарная накладная
+                    </div>
+                    <picture>
+                        <source srcset="img/ten.webp" type="image/webp">
+                        <img src="img/ten.png" loading="lazy" class="contract-block-listing-elem__image">
+                    </picture>
+                </div>
+                <div class="contract-block-listing-inst wow fadeIn">
+                    <picture>
+                        <source srcset="img/pen.webp" type="image/webp">
+                        <img src="img/pen.png" loading="lazy" class="contract-block-listing-inst__pen">
+                    </picture>
+                    <picture>
+                        <source srcset="img/pain.webp" type="image/webp">
+                        <img src="img/pain.png" loading="lazy" class="contract-block-listing-inst__pain">
+                    </picture>
+                </div>
+            </div>
+            <div class="contract-block-grid">
+                <div class="contract-block-grid-fon wow fadeIn">
+                    <div class="contract-block-grid-fon-icon">
+                        <div class="contract-block-grid-fon-icon__image">
+                            <img src="img/icon_3.svg">
+                        </div>
+                        <div class="contract-block-grid-fon-icon__info"><span>Любая форма оплаты:</span> наличная,<br>безналичная,  оплата пластиковой<br>или кредитной картой</div>
+                    </div>
+                </div>
+                <div class="contract-block-grid-fon wow fadeIn">
+                    <div class="contract-block-grid-fon-icon">
+                        <div class="contract-block-grid-fon-icon__image">
+                            <img src="img/icon_2.svg">
+                        </div>
+                        <div class="contract-block-grid-fon-icon__info"><span>Работаем</span> с юридическими<br>лицами с НДС</div>
+                    </div>
+                </div>
+                <div class="contract-block-grid-fon wow fadeIn">
+                    <div class="contract-block-grid-fon-icon">
+                        <div class="contract-block-grid-fon-icon__image">
+                            <img src="img/icon_1.svg">
+                        </div>
+                        <div class="contract-block-grid-fon-icon__info">Возможность заключения<br>договора как на объекте<br>заказчика так и <span>дистанционно</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Комплектующие -->
+    <section class="accessories">
+        <div class="accessories-block">
+            <div class="page--title accessories-block__title wow fadeIn">АВТОМАТИКА И КОМПЛЕКТУЮЩИЕ ДЛЯ ПРОИЗВОДСТВА ВОРОТ</div>
+            <div class="page--subtitle accessories-block__subtitle wow fadeIn">Авторизованный сервисный центр DOORHAN</div>
+            <div class="accessories-block-slider wow fadeIn">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/accessories_1.webp" type="image/webp">
+                                    <img src="img/accessories_1.png" loading="lazy">
+                                </picture>
+                                <div class="accessories-block-slider-info">
+                                    <span class="accessories-block-slider-info__name">Привод</span>
+                                    <span class="accessories-block-slider-info__line"></span>
+                                    <span class="accessories-block-slider-info__text">Электромеханический привод предназначен для автоматизации сдвижных ворот</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/accessories_2.webp" type="image/webp">
+                                    <img src="img/accessories_2.png" loading="lazy">
+                                </picture>
+                                <div class="accessories-block-slider-info">
+                                    <span class="accessories-block-slider-info__name">Сигнальная лампа</span>
+                                    <span class="accessories-block-slider-info__line"></span>
+                                    <span class="accessories-block-slider-info__text">Сигнальная лампа - это устройство безопасности, сигнализирующее о движении ворот или шлагбаума </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/accessories_3.webp" type="image/webp">
+                                    <img src="img/accessories_3.png" loading="lazy">
+                                </picture>
+                                <div class="accessories-block-slider-info">
+                                    <span class="accessories-block-slider-info__name">Фотоэлементы</span>
+                                    <span class="accessories-block-slider-info__line"></span>
+                                    <span class="accessories-block-slider-info__text">Это устройство безопасности, состоящее из инфракрасного передатчика и приемника</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/accessories_4.webp" type="image/webp">
+                                    <img src="img/accessories_4.png" loading="lazy">
+                                </picture>
+                                <div class="accessories-block-slider-info">
+                                    <span class="accessories-block-slider-info__name">Балка и ролики</span>
+                                    <span class="accessories-block-slider-info__line"></span>
+                                    <span class="accessories-block-slider-info__text">Электромеханический привод предназначен для автоматизации сдвижных ворот</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/accessories_5.webp" type="image/webp">
+                                    <img src="img/accessories_5.png" loading="lazy">
+                                </picture>
+                                <div class="accessories-block-slider-info">
+                                    <span class="accessories-block-slider-info__name">Пуль ДУ</span>
+                                    <span class="accessories-block-slider-info__line"></span>
+                                    <span class="accessories-block-slider-info__text">Электронное устройство для удалённого (дистанционного) управления</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/accessories_6.webp" type="image/webp">
+                                    <img src="img/accessories_6.png" loading="lazy">
+                                </picture>
+                                <div class="accessories-block-slider-info">
+                                    <span class="accessories-block-slider-info__name">Привод</span>
+                                    <span class="accessories-block-slider-info__line"></span>
+                                    <span class="accessories-block-slider-info__text">Электромеханический привод предназначен для автоматизации сдвижных ворот</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Профессиональный подход -->
+    <section class="professional">
+        <div class="professional-block">
+            <div class="page--title professional-block__title wow fadeIn">Наш профессиональный подход</div>
+            <div class="page--subtitle professional-block__subtitle wow fadeIn">У нас в наличии все образцы материалов, комплектующих и автоматики</div>
+            <div class="professional-block-grid wow fadeIn">
+                <div class="professional-block-grid-icon elem__grid">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_1.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Расчет изделий</div>
+                    <div class="professional-block-grid-icon__info">Наши операторы готовы произвести расчет изделий с 8:00 до 20:00 ежедневно, без  перерывов и выходных</div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_2.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Консультация</div>
+                    <div class="professional-block-grid-icon__info">Мы проконсультируем вас по подготовке проемов на стадии проектирования и в процессе строительства</div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_3.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Подбор изделий</div>
+                    <div class="professional-block-grid-icon__info">Подберем оптимальные изделия по техническим характеристикам проема и дальнейших условий эксплуатации </div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_4.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Заключение договора</div>
+                    <div class="professional-block-grid-icon__info">Возможность заключения договора как на объекте заказчика так и дистанционно</div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_5.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Лучшее качество</div>
+                    <div class="professional-block-grid-icon__info">Изделия только заводского качества с полным контролем всех производственных процесов</div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_6.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Доставка на объект</div>
+                    <div class="professional-block-grid-icon__info">Доставка готовых изделий на объект заказчика транспортом предприятия</div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_7.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Монтаж</div>
+                    <div class="professional-block-grid-icon__info">Профессиональный и качественный монтаж</div>
+                </div>
+                <div class="professional-block-grid-icon elem__grid wow fadeIn">
+                    <div class="professional-block-grid-icon__image">
+                        <img src="img/aside-icon_8.svg">
+                    </div>
+                    <div class="professional-block-grid-icon__title">Гарантия</div>
+                    <div class="professional-block-grid-icon__info">Гарантийное и послегарантийное обслуживание всех изделий и оборудования</div>
+                </div>
+            </div>
+            <div class="professional-block-grid-show"><span id="show">Показать ещё...</span></div>
+            <div class="professional-block-quality wow fadeIn">
+                <div class="professional-block-quality-border">
+                    <div class="professional-block-quality-border__image">
+                        <picture>
+                            <source srcset="img/aside-image.webp" type="image/webp">
+                            <img src="img/aside-image.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="professional-block-quality-border-info">
+                        <div class="professional-block-quality-border-info__title">
+                            Вся выпускаемая нами продукция – прошла добровольную сертификацию по системе РСТ<br>в 2019 году что подтверждено сертификатом
+                        </div>
+                        <div class="professional-block-quality-border-info__subtitle">Вот уже 13 лет мы работаем для ВАС</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section class="portfolio">
+        <div class="portfolio-block">
+            <div class="page--title portfolio-block__title wow fadeIn">наше портфолио</div>
+            <div class="page--subtitle portfolio-block__subtitle wow fadeIn">Посмотрите варианты исполнения откатных ворот</div>
+            <div class="portfolio-block-slider wow fadeIn">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/slider_3_1.webp" type="image/webp">
+                                    <img src="img/slider_3_1.png" loading="lazy">
+                                </picture>
+                                <span>Облицовка из металл профиля</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/slider_3_2.webp" type="image/webp">
+                                    <img src="img/slider_3_2.png" loading="lazy">
+                                </picture>
+                                <span>Облицовка из штакетника</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/slider_3_3.webp" type="image/webp">
+                                    <img src="img/slider_3_3.png" loading="lazy">
+                                </picture>
+                                <span>Облицовка из плазменной разки</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/slider_3_1.webp" type="image/webp">
+                                    <img src="img/slider_3_1.png" loading="lazy">
+                                </picture>
+                                <span>Облицовка из металл профиля</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/slider_3_2.webp" type="image/webp">
+                                    <img src="img/slider_3_2.png" loading="lazy">
+                                </picture>
+                                <span>Облицовка из штакетника</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/slider_3_3.webp" type="image/webp">
+                                    <img src="img/slider_3_3.png" loading="lazy">
+                                </picture>
+                                <span>Облицовка из плазменной разки</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма отправки -->
+    <section class="measuring" id="form">
+        <div class="measuring-home" data-bg="img/chb-2.png" data-bg-webp="img/chb-2.webp"></div>
+        <div class="measuring-fon wow fadeIn" data-bg="img/men.png" data-bg-webp="img/men.webp">
+            <div class="measuring-block">
+                <div class="measuring-block-info wow fadeIn">
+                    <div class="measuring-block-info__title">Если Ваш объект на расстоянии<br>50 км от нашего офиса - Замер<br><span>бесплатно</span></div>
+                    <ul class="measuring-block-info-ul">
+                        <li>Специалист сделает замер</li>
+                        <li>Покажет образцы материалов</li>
+                        <li>Проконсультирует по подготовке проема</li>
+                        <li>Поможет выбрать конструкцию под ваш бюджет</li>
+                    </ul>
+                    <a href="gate-is-frozen.html" class="measuring-block-info__button">Условия проведения замера</a>
+                </div>
+                <div class="measuring-block-form wow fadeIn">
+                    <form action="" name="myForm" class="form-submit -validate-form-">
+                        <div class="measuring-block-form__title">Выезд на замер</div>
+                        <label for="name" class="measuring-block-form-label">
+                            <span class="measuring-block-form-label__title">Ваше имя</span>
+                            <input type="text" name="name" id="name" class="measuring-block-form-label__input input__name -validate-name-">
+                            <span class="measuring-block-form-label__error error-name">Пожалуйста, введите Ваше имя!</span>
+                        </label>
+                        <label for="tel" class="measuring-block-form-label">
+                            <span class="measuring-block-form-label__title">Ваш телефон</span>
+                            <input type="tel" name="tel" id="tel" placeholder="8 ( _  _  _ ) _  _  _   -  _  _   -   _  _" class="measuring-block-form-label__input input__tel -validate-phone-">
+                            <span class="measuring-block-form-label__error error-tel">Пожалуйста, введите Ваш телефон!</span>
+                        </label>
+                        <button type="submit" class="page--botton measuring-block-form__submit">Вызвать специалиста</button>
+                        <div data-fancybox data-type="ajax" data-src="modal/perdan-modal.html" class="measuring-block-form__perdan" >Отправляя форму, Вы даете согласие на обработку Ваших персональных данных</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="contact-block contact-grid">
+            <div class="contact-block-info wow fadeIn">
+                <div class="page--title contact-block-info__title">наши контакты</div>
+                <div class="page--subtitle contact-block-info__subtitle">Свяжитесь с нами любым приемлемым способом!</div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-tel.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Звоните</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-geo.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Приезжайте или приходите</span>
+                        <span class="contact-block-info-grid-text__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-mail.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Пишите</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-clock.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">График работы</span>
+                        <span class="contact-block-info-grid-text__subtitle">Производственный цех: c 8:00 до 17:00<br>Операторы: c 8:00 до 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb0be0984a04f95072ef6021d32794142a02bed22dd3b0b02c1a8f0d808c4d9b&amp;source=constructor" frameborder="0" class="contact-block-map wow fadeIn"></iframe>
+        </div>
+        <div class="contact-block contact-invitation">
+            <a href="/"><picture>
+	            <source srcset="img/logo.webp" type="image/webp">
+	            <img src="img/logo.png" loading="lazy" class="contact-invitation__image">
+	        </picture></a>
+            <div class="contact-invitation__info">Приглашаем посетить наше производство и лично убедиться в широком ассортименте и высоком качестве выпускаемой нами продукции </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer wow fadeIn">
+        <div class="footer-block">
+            <span>&copy; 2021 Воротные системы</span>
+            <span>Разработка: <a href="https://stdkit.ru/" target="_blank">Студия К.И.Т.</a></span>
+        </div>
+    </footer>
+    
+    <script src="js/formatImg.js"></script>
+    <script src="js/menuScroll.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

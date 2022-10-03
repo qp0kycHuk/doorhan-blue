@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/ffavicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Услуга «Замер»</title>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="nav">
+        <div class="nav-block">
+            <a href="index.html"><picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <img src="img/logo.png" loading="lazy" class="nav-block__logo">
+            </picture></a>
+            <ul class="nav-block-ul">
+                <li><a href="#price">Стоимость</a></li>
+                <li><a href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <span class="nav-block__tel">
+                <a href="tel: +78612139179">
+                    <img src="img/tel.svg">8 (861) 213-91-79
+                </a>
+            </span>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="nav-block__button">Заказать звонок</button>
+            <div class="nav-block__burger"><div id="burger">
+                <span class="line-1 line"></span><span class="line-2 line"></span><span class="line-3 line"></span>
+            </div></div>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="menu">
+        <ul class="menu-listing">
+            <li><a class="menu-listing-menu__link" href="#price">Стоимость</a></li>
+            <li><a class="menu-listing-menu__link" href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+            <li><a class="menu-listing-menu__link" href="#contact">Контакты</a></li>
+        </ul>
+        <div class="menu-contact">
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-tel.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Телефон:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-geo.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Адрес:</span>
+                    <span class="menu-contact-grid-info__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-mail.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Почта:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-clock.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">График работы:</span>
+                    <span class="menu-contact-grid-info__subtitle">Производственный цех: c 8:00 до 17:00 Операторы: c 8:00 до 20:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Услуга «Замер» (заголовок) -->
+    <section class="types-of-sliding-gates-header hero wow fadeIn" data-bg="img/volna-gates.png" data-bg-webp="img/volna-gates.webp">
+        <div class="types-of-sliding-gates-header-block">
+            <div class="page--title types-of-sliding-gates-header-block__title">Услуга «Замер»</div>
+            <div class="types-of-sliding-gates-header-block__subtitle">
+                К Вам на объект приедет специалист c профессиональными знаниями всех нюансов монтажа<br>
+                и не менее 5-и летним опытом работы по установке наших изделий всех размеров и форм
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуга «Замер» -->
+    <section class="service-measured">
+        <div class="service-measured-block">
+            <div class="service-measured-block-info">
+                <div class="service-measured-block-info__title wow fadeIn">Что вы получаете?</div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">1</div>
+                    <div class="service-measured-block-info-grid__text">Вам помогут точно определить параметры и размеры проема</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">2</div>
+                    <div class="service-measured-block-info-grid__text">Специалист привозит примеры наших изделий и Вы "вживую" сможете убедиться в их качестве</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">3</div>
+                    <div class="service-measured-block-info-grid__text">Вам покажут фотографии выполненных работ</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">4</div>
+                    <div class="service-measured-block-info-grid__text">Вас проконсультируют, как правильно подготовить проем к установке</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">5</div>
+                    <div class="service-measured-block-info-grid__text">Расскажут, как правильно провести электропитание для электропривода</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">6</div>
+                    <div class="service-measured-block-info-grid__text">Вам подробно расскажут порядок изготовления, доставки и установки изделия</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">7</div>
+                    <div class="service-measured-block-info-grid__text">Озвучат окончательную стоимость изделия с учетом всех нюансов</div>
+                </div>
+                <div class="service-measured-block-info-grid wow fadeIn">
+                    <div class="service-measured-block-info-grid__int">8</div>
+                    <div class="service-measured-block-info-grid__text">Главное - Вы сможете подписать все документы на месте и Вам не придется приезжать к нам в офис</div>
+                </div>
+            </div>
+            <div class="service-measured-block-image wow fadeIn">
+                <picture>
+                    <source srcset="img/measured-bc.webp" type="image/webp">
+                    <img src="img/measured-bc.png" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стоимость услуги -->
+    <section class="price-measured" data-bg="img/volna-measured.png" data-bg-webp="img/volna-measured.webp" id="price">
+        <div class="page--title price-measured__title wow fadeIn">Стоимость услуги</div>
+        <div class="price-measured-block">
+            <div class="price-measured-block-elem wow fadeIn">
+                <div class="price-measured-block-elem-info">
+                    <div class="price-measured-block-elem-info__title">Бесплатно</div>
+                    <div class="price-measured-block-elem-info__subtitle">До 40 км. от офиса</div>
+                    <div class="price-measured-block-elem-info__text">
+                        Если после приезда специалиста и консультации по всем вопросам
+                        Вы соглашаетесь на дальнейшую работу с нами и подписываете договор
+                    </div>
+                </div>
+            </div>
+            <div class="price-measured-block-elem wow fadeIn">
+                <div class="price-measured-block-elem-info">
+                    <div class="price-measured-block-elem-info__title">Бесплатно</div>
+                    <div class="price-measured-block-elem-info__subtitle">До 40 км. от офиса</div>
+                    <div class="price-measured-block-elem-info__text">
+                        Если специалист, не день в день, а в течении недели
+                        выезжает в Вашем направлении и может заехать к Вам по пути.<br><br>
+                        В таком случае Вам предварительно перезванивают и
+                        уточняют, будете ли Вы на объекте в этот день
+                    </div>
+                </div>
+            </div>
+            <div class="price-measured-block-elem wow fadeIn">
+                <div class="price-measured-block-elem-info">
+                    <div class="price-measured-block-elem-info__title">12 руб/км пути</div>
+                    <div class="price-measured-block-elem-info__text">
+                        Если специалист приехал на срочный замер и предоставил консультацию
+                        по всем вопросам, но Вы по каким-то причинам не готовы подписывать договор.<br><br>
+                        <span>Важно!</span> Если Вы, в дальнейшем, подписываете с нами договор, то внесенная
+                        Вами стоимость за Замер считается Авансовой и вычитается из общей стоимости заказа изделия
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="contact-block contact-grid">
+            <div class="contact-block-info wow fadeIn">
+                <div class="page--title contact-block-info__title">наши контакты</div>
+                <div class="page--subtitle contact-block-info__subtitle">Свяжитесь с нами любым приемлемым способом!</div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-tel.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Звоните</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-geo.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Приезжайте или приходите</span>
+                        <span class="contact-block-info-grid-text__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-mail.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Пишите</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-clock.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">График работы</span>
+                        <span class="contact-block-info-grid-text__subtitle">Производственный цех: c 8:00 до 17:00<br>Операторы: c 8:00 до 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb0be0984a04f95072ef6021d32794142a02bed22dd3b0b02c1a8f0d808c4d9b&amp;source=constructor" frameborder="0" class="contact-block-map wow fadeIn"></iframe>
+        </div>
+        <div class="contact-block contact-invitation">
+            <a href="/"><picture>
+	            <source srcset="img/logo.webp" type="image/webp">
+	            <img src="img/logo.png" loading="lazy" class="contact-invitation__image">
+	        </picture></a>
+            <div class="contact-invitation__info">Приглашаем посетить наше производство и лично убедиться в широком ассортименте и высоком качестве выпускаемой нами продукции </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer wow fadeIn">
+        <div class="footer-block">
+            <span>&copy; 2021 Воротные системы</span>
+            <span>Разработка: <a href="https://stdkit.ru/" target="_blank">Студия К.И.Т.</a></span>
+        </div>
+    </footer>
+
+    <script src="js/formatImg.js"></script>
+    <script src="js/menuScroll.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

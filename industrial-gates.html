@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/ffavicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Промышленные ворота DOORHAN</title>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="nav">
+        <div class="nav-block">
+            <a href="index.html"><picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <img src="img/logo.png" loading="lazy" class="nav-block__logo">
+            </picture></a>
+            <ul class="nav-block-ul">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#production">Продукция</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#form">Замер</a></li>
+                <li><a href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <span class="nav-block__tel">
+                <a href="tel: +78612139179">
+                    <img src="img/tel.svg">8 (861) 213-91-79
+                </a>
+            </span>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="nav-block__button">Заказать звонок</button>
+            <div class="nav-block__burger"><div id="burger">
+                <span class="line-1 line"></span><span class="line-2 line"></span><span class="line-3 line"></span>
+            </div></div>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="menu">
+        <ul class="menu-listing">
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="menu-listing-menu__link" href="#production">Продукция</a></li>
+            <li><a class="menu-listing-menu__link" href="#gallery">Галерея</a></li>
+            <li><a class="menu-listing-menu__link" href="#form">Замер</a></li>
+            <li><a class="menu-listing-menu__link" href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+            <li><a class="menu-listing-menu__link" href="#contact">Контакты</a></li>
+        </ul>
+        <div class="menu-contact">
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-tel.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Телефон:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-geo.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Адрес:</span>
+                    <span class="menu-contact-grid-info__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-mail.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Почта:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-clock.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">График работы:</span>
+                    <span class="menu-contact-grid-info__subtitle">Производственный цех: c 8:00 до 17:00 Операторы: c 8:00 до 20:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Главная -->
+    <header class="company hero">
+        <div class="company-voln">
+            <picture>
+                <source srcset="img/volna-header.webp" type="image/webp">
+                <img src="img/volna-header.png" loading="lazy" class="company-voln__img">
+            </picture>
+        </div>
+        <div class="company-chb">
+            <picture>
+                <source srcset="img/chb.webp" type="image/webp">
+                <img src="img/chb.png" loading="lazy" class="company-chb__img">
+            </picture>
+        </div>
+        <div class="company-dor wow fadeIn">
+            <picture>
+                <source srcset="img/dor_9.webp" type="image/webp">
+                <img src="img/dor_9.png" loading="lazy" class="company-dor__img">
+            </picture>
+        </div>
+        <div class="company-block wow fadeIn">
+            <div class="page--title company-block__title">ПРОМЫШЛЕННЫЕ ВОРОТА<br>DOORHAN</div>
+            <div class="page--subtitle company-block__subtitle">С доставкой и установкой по Краснодару<br>и Краснодарскому краю</div>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="company-block__button page--botton">Отправить заявку</button>
+            <div class="company-block-icons">
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/home.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">4 производственных<br>цеха в крае</div>
+                </div>
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/pol.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">Большой выбор<br>полотен</div>
+                </div>
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/year.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">3 года гарантии<br>на автоматику</div>
+                </div>
+                <div class="company-block-icons-grid">
+                    <div class="company-block-icons-grid__image">
+                        <img src="img/price.svg">
+                    </div>
+                    <div class="company-block-icons-grid__info">Лучшие цена<br>и качество в регионе</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Лучшая цена -->
+    <section class="best-price">
+        <div class="best-price-block">
+            <div class="page--title best-price-block__title wow fadeIn">Мы гарантируем лучшую цену</div>
+            <div class="page--subtitle best-price-block__subtitle wow fadeIn">Т.к. являемся самым крупным официальным дилером DoorHan в Крае</div>
+            <div class="best-price-block-grid wow fadeIn">
+                <div class="best-price-block-grid-elem wow fadeIn">
+                    <img src="img/best_price_1.svg" class="best-price-block-grid-elem__icon">
+                    <div class="best-price-block-grid-elem-info">
+                        <span class="best-price-block-grid-elem-info__title">Монтажные бригады с опытом более 5 лет</span>
+                        <span class="best-price-block-grid-elem-info__text">
+                            У нас опытные монтажные бригады, которые знают все нюансы надежной установки ворот
+                            и автоматики. Это очень важный фактор, в случае одинаковой цены от разных дилеров
+                        </span>
+                    </div>
+                </div>
+                <div class="best-price-block-grid-elem wow fadeIn">
+                    <img src="img/best_price_2.svg" class="best-price-block-grid-elem__icon">
+                    <div class="best-price-block-grid-elem-info">
+                        <span class="best-price-block-grid-elem-info__title">Открыто предоставляем смету</span>
+                        <span class="best-price-block-grid-elem-info__text">
+                            Конкуренты назвали цену на 10-15% ниже. А Вы уверены, что автоматика или полотно той
+                            же модели или того же качества, что и у нас? Если комплектация одинаковая, мы сделаем скидку!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фрейм -->
+    <section class="frame" id="calculation">
+        <div class="frame-block">
+            <div class="page--title frame-block__title wow fadeIn">Расчет стоимости</div>
+            <div class="page--subtitle frame-block__subtitle wow fadeIn">Воспользуйтесь онлайн калькулятором для быстрого расчета прямо сейчас</div>
+            <iframe src="https://forms.files.doorhan-krd.ru/web/b24/default/calculator-gates-industrial-doorhan" width="100%" class="frame-block__iframe iframe__industrial wow fadeIn"></iframe>
+        </div>
+    </section>
+
+    <!-- Ворота 2008 -->
+    <section class="installation" id="gallery">
+        <div class="installation-block">
+            <div class="page--title installation-block__title wow fadeIn">Устанавливаем ворота с 2008 года</div>
+            <div class="page--subtitle installation-block__subtitle wow fadeIn">Беремся даже за самые сложные объекты</div>
+            <div class="installation-block-slider wow fadeIn">
+                <div class="image-slider swiper-container">
+                    <div class="image-slider__wrapper swiper-wrapper">
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/industrial_1.webp" type="image/webp">
+                                    <img src="img/industrial_1.jpg" loading="lazy">
+                                </picture>
+                                <span>Секционные ворота<br>Размер 4000х3000 мм</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/industrial_2.webp" type="image/webp">
+                                    <img src="img/industrial_2.jpg" loading="lazy">
+                                </picture>
+                                <span>Секционные ворота<br>Размер 5000х4200 мм</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/industrial_3.webp" type="image/webp">
+                                    <img src="img/industrial_3.jpg" loading="lazy">
+                                </picture>
+                                <span>Рулонные ворота<br>Размер 4000х4200 мм</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/industrial_4.webp" type="image/webp">
+                                    <img src="img/industrial_4.jpg" loading="lazy">
+                                </picture>
+                                <span>Секционные ворота<br>Размер 3000х4200 мм</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/industrial_5.webp" type="image/webp">
+                                    <img src="img/industrial_5.jpg" loading="lazy">
+                                </picture>
+                                <span>Секционные ворота<br>Размер 4000х4200 мм</span>
+                            </div>
+                        </div>
+                        <div class="image-slider__slide swiper-slide">
+                            <div class="image-slider__image">
+                                <picture>
+                                    <source srcset="img/industrial_6.webp" type="image/webp">
+                                    <img src="img/industrial_6.jpg" loading="lazy">
+                                </picture>
+                                <span>Секционные ворота<br>Размер 3000х3000 мм</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Промышленные ворота -->
+    <section class="industrial-gates" id="production">
+        <div class="industrial-gates-block">
+            <div class="page--title industrial-gates-block__title wow fadeIn">СЕКЦИОННЫЕ ВОРОТА</div>
+            <div class="industrial-gates-block-grid">
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_4.webp" type="image/webp">
+                            <img src="img/grid-gates_4.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">ISD01 стандартные</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Выдерживают эксплуатацию высокой интенсивности. Обладают надежной герметизацией
+                            по всему периметру. Используют торсионный механизм QuickFix
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Секционные ворота ISD01<br>
+                                <span>Размер 4000*4200</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">127 710 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/ISD01-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_3.webp" type="image/webp">
+                            <img src="img/grid-gates_3.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">ISD02 с панорамным остеклением</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Состоят из панорамных панелей. Не уступают по прочности и герметизации воротам ISD01.
+                            Представлены в более 100 вариантах дизайнерского исполнения
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                С панорамным остеклением ISD02<br>
+                                <span>Размер 4000*4200</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">256 800 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/ISD02-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_2.webp" type="image/webp">
+                            <img src="img/grid-gates_2.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">ISD03 из алюминиевых панелей</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Устанавливаются в проемы больших размеров шириной до 10 м и высотой до 9,5 м.
+                            Оснащены комплексной системой безопасности и обладают высокими показателями прочности
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Ворота из алюминиевых панелей ISD03<br>
+                                <span>Размер 4000*4200</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">356 148 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/ISD03-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_1.webp" type="image/webp">
+                            <img src="img/grid-gates_1.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">ISD ThermalPro</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Устанавливаются в проемы больших размеров шириной до 10 м и высотой до 9,5 м.
+                            Оснащены комплексной системой безопасности и обладают высокими показателями прочности
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Секционные ворота ThermalPro<br>
+                                <span>Размер 4000*4200</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">322 790 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/ISD-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="page--title industrial-gates-block__title wow fadeIn">ПРОТИВОПОЖАРНЫЕ ВОРОТА</div>
+            <div class="industrial-gates-block-grid">
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_8.webp" type="image/webp">
+                            <img src="img/grid-gates_8.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Секционные</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Изготовлены из специальных огнеустойчивых панелей. Прошли полный цикл сертификации.
+                            Обладают высокой прочностью, термо- и звукоизоляцией, а также защитой от взлома
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Противопожарные секционные ворота<br>
+                                <span>Размер 3000*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">189 540 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/fire-section-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_7.webp" type="image/webp">
+                            <img src="img/grid-gates_7.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Откатные</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Применяются в промышленных и складских помещениях, в паркингах, жилищных
+                            и торговых комплексах. Имеется большой выбор конструктивных решений
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Противопожарные откатные ворота<br>
+                                <span>Размер 3000*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">163 686 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/fire-sliding-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_6.webp" type="image/webp">
+                            <img src="img/grid-gates_6.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Распашные</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Изготавливаются симметричными и несимметричными, с открыванием внутрь или наружу.
+                            Применяется специальная система уплотнителей в местах стыка створок
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Противопожарные распашные ворота<br>
+                                <span>Размер 3000*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">134 950 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/fire-swing-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_5.webp" type="image/webp">
+                            <img src="img/grid-gates_5.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">ISD ThermalPro</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Многослойный состав полотна обеспечивает надежность изделия в критической ситуации.
+                            Техническая простота позволяет обеспечивать легкость монтажа
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Противопожарные шторы<br>
+                                <span>Размер 3000*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">106 340 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/fire-ISD-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="page--title industrial-gates-block__title wow fadeIn">РУЛОННЫЕ ВОРОТА</div>
+            <div class="industrial-gates-block-grid">
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_10.webp" type="image/webp">
+                            <img src="img/grid-gates_10.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Стальные с вальным приводом</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Устанавливаются на въездные и гаражные проемы шириной до 20,5м.
+                            Профили изготавливаются из холоднокатаной оцинкованной стали устойчивой к коррозии
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Рулонные с внутривальным приводом<br>
+                                <span>Размер 3000*3000</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">92 100 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/rolled-steel-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_9.webp" type="image/webp">
+                            <img src="img/grid-gates_9.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Скоростные</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Предназначены для изоляции и сохранения микроклимата различных помещений.
+                            Обладают высокой скоростью работы - до 2,5 м/с и широким набором доп. опций
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Рулонные скоростные ворота<br>
+                                <span>Размер 2500*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">268 110 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/rolled-speed-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="page--title industrial-gates-block__title wow fadeIn">СКЛАДНЫЕ ВОРОТА</div>
+            <div class="industrial-gates-block-grid">
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_12.webp" type="image/webp">
+                            <img src="img/grid-gates_12.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Складные без нижней направляющей</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Предназначены для установки в помещениях промышленного назначения
+                            шириной до 8,2 м, высотой - до 6 м. Минимальные требования к проему
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Складные без нижней направляющей<br>
+                                <span>Размер 3000*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">249 140 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/folding-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_11.webp" type="image/webp">
+                            <img src="img/grid-gates_11.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Складные с нижней направляющей</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Предназначены для установки в помещениях промышленного назначения
+                            шириной до 30м, высотой - до 8м. Подходят для любых климатических зон
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Складные с нижней направляющей<br>
+                                <span>Размер 3000*2500</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">346 872 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/folding-guide-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="page--title industrial-gates-block__title wow fadeIn">СКОРОСТНЫЕ ВОРОТА</div>
+            <div class="industrial-gates-block-grid">
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image industrial-gates-block-grid-elem-image-bc">
+                        <picture>
+                            <source srcset="img/grid-gates_14.webp" type="image/webp">
+                            <img src="img/grid-gates_14.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Складывающиеся</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Отличаются конструкцией с повышенной устойчивостью к ветровым нагрузкам.
+                            Состоят из горизонтальных стальных профилей повышенной прочности
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Скоростные складывающиеся ворота<br>
+                                <span>SPEEDFOLD SDF 3000*3000</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">245 362 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/speeding-fold-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_13.webp" type="image/webp">
+                            <img src="img/grid-gates_13.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Спиральные</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Сочетают в себе лучшие качества рулонных ПВХ и секционных ворот.
+                            Применяются на автомобильных парковках, производственных и складских объектах
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Скоростные спиральные ворота<br>
+                                <span>HSSD 3000*3000</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">856 050 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/speeding-spiral-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="page--title industrial-gates-block__title wow fadeIn">ОТКАТНЫЕ ВОРОТА</div>
+            <div class="industrial-gates-block-grid">
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_15.webp" type="image/webp">
+                            <img src="img/grid-gates_15.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Откатные без нижней направляющей</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Сдвигаются в любом направлении: влево, вправо, в обе стороны.
+                            Простота конструкции обеспечивается минимумом подвижных элементов
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Откатные без нижней направляющей<br>
+                                <span>Размер 3000*3000</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">174 466 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/sliding-noguide-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="industrial-gates-block-grid-elem wow fadeIn">
+                    <div class="industrial-gates-block-grid-elem-image">
+                        <picture>
+                            <source srcset="img/grid-gates_16.webp" type="image/webp">
+                            <img src="img/grid-gates_16.png" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="industrial-gates-block-grid-elem-info">
+                        <span class="industrial-gates-block-grid-elem-info__title">Откатные с нижней направляющей</span>
+                        <span class="industrial-gates-block-grid-elem-info__text">
+                            Устанавливаются в проемы больших размеров шириной до 30м, высотой — до 8м.
+                            Обладают высокой теплоизоляцией и герметичностью
+                        </span>
+                        <span class="industrial-gates-block-grid-elem-info__subtitle">Популярные модели</span>
+                        <div class="industrial-gates-block-grid-elem-info-model">
+                            <span class="industrial-gates-block-grid-elem-info-model-check">
+                                <img src="img/checked.svg">
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__name">
+                                Откатные с нижней направляющей<br>
+                                <span>Размер 8000*11000</span>
+                            </span>
+                            <span class="industrial-gates-block-grid-elem-info-model__price">1 632 000 ₽</span>
+                        </div>
+                        <span class="models-block-grid-info-buttons industrial-gates-block-grid-elem-info-buttons">
+                            <a href="#calculation" class="models-block-grid-info-buttons__price">Рассчитать стоимость</a>
+                            <button data-fancybox data-type="ajax" data-src="modal/sliding-guide-modal.html" class="models-block-grid-info-buttons__door">Посмотреть фото</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Договор -->
+    <section class="contract" data-bg="img/volna.png" data-bg-webp="img/volna.webp">
+        <div class="contract-block">
+            <div class="page--title contract-block__title wow fadeIn">работаем открыто</div>
+            <div class="page--subtitle contract-block__subtitle wow fadeIn">В договоре мы фиксируем окончательную стоимость изделия и монтажа до начала работ</div>
+            <div class="contract-block-listing wow fadeIn" data-bg="img/dogovor.png" data-bg-webp="img/dogovor.webp">
+                <div class="contract-block-listing-elem wow fadeIn">
+                    <div class="contract-block-listing-elem__title">Предоставляем гарантии<br>на свои услуги</div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/1 year.svg">
+                        <span>1 год</span> на воротное полотно
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/3 year.svg">
+                        <span>3 года</span> на автоматику
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/6 month.svg">
+                        <span>6 месяцев</span> на монтажные работы
+                    </div>
+                </div>
+                <div class="contract-block-listing-elem wow fadeIn">
+                    <div class="contract-block-listing-elem__title">Предоставляем полный<br>пакет документов</div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/talon.svg">
+                        Гарантийный талон
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/akRab.svg">
+                        Акт выполненных работ
+                    </div>
+                    <div class="contract-block-listing-elem__subtitle">
+                        <img src="img/tovar.svg">
+                        Товарная накладная
+                    </div>
+                    <picture>
+                        <source srcset="img/ten.webp" type="image/webp">
+                        <img src="img/ten.png" loading="lazy" class="contract-block-listing-elem__image">
+                    </picture>
+                </div>
+                <div class="contract-block-listing-inst wow fadeIn">
+                    <picture>
+                        <source srcset="img/pen.webp" type="image/webp">
+                        <img src="img/pen.png" loading="lazy" class="contract-block-listing-inst__pen">
+                    </picture>
+                    <picture>
+                        <source srcset="img/pain.webp" type="image/webp">
+                        <img src="img/pain.png" loading="lazy" class="contract-block-listing-inst__pain">
+                    </picture>
+                </div>
+            </div>
+            <div class="contract-block-grid">
+                <div class="contract-block-grid-fon wow fadeIn">
+                    <div class="contract-block-grid-fon-icon">
+                        <div class="contract-block-grid-fon-icon__image">
+                            <img src="img/icon_3.svg">
+                        </div>
+                        <div class="contract-block-grid-fon-icon__info"><span>Любая форма оплаты:</span> наличная,<br>безналичная,  оплата пластиковой<br>или кредитной картой</div>
+                    </div>
+                </div>
+                <div class="contract-block-grid-fon wow fadeIn">
+                    <div class="contract-block-grid-fon-icon">
+                        <div class="contract-block-grid-fon-icon__image">
+                            <img src="img/icon_2.svg">
+                        </div>
+                        <div class="contract-block-grid-fon-icon__info"><span>Работаем</span> с юридическими<br>лицами с НДС</div>
+                    </div>
+                </div>
+                <div class="contract-block-grid-fon wow fadeIn">
+                    <div class="contract-block-grid-fon-icon">
+                        <div class="contract-block-grid-fon-icon__image">
+                            <img src="img/icon_1.svg">
+                        </div>
+                        <div class="contract-block-grid-fon-icon__info">Возможность заключения<br>договора как на объекте<br>заказчика так и <span>дистанционно</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подход -->
+    <section class="approach">
+        <div class="approach-block">
+            <div class="page--title approach-block__title wow fadeIn">Наш профессиональный подход</div>
+            <div class="approach-block-grid">
+                <div class="approach-block-grid-elem wow fadeIn">
+                    <picture>
+                        <source srcset="img/prof-1.webp" type="image/webp">
+                        <img src="img/prof-1.png" loading="lazy" class="approach-block-grid-elem__fon">
+                    </picture>
+                    <picture>
+                        <source srcset="img/int_4.webp" type="image/webp">
+                        <img src="img/int_4.png" loading="lazy" class="approach-block-grid-elem__int">
+                    </picture>
+                    <div class="approach-block-grid-elem__text">Наш специалист бесплатно приезжает на объект и делает все необходимые замеры. После чего подписывается договор</div>
+                </div>
+                <div class="approach-block-grid-elem wow fadeIn">
+                    <picture>
+                        <source srcset="img/prof-2.webp" type="image/webp">
+                        <img src="img/prof-2.png" loading="lazy" class="approach-block-grid-elem__fon">
+                    </picture>
+                    <picture>
+                        <source srcset="img/int_3.webp" type="image/webp">
+                        <img src="img/int_3.png" loading="lazy" class="approach-block-grid-elem__int">
+                    </picture>
+                    <div class="approach-block-grid-elem__text">На начальном этапе, при необходимости, выполняются все подготовительные работы</div>
+                </div>
+                <div class="approach-block-grid-elem wow fadeIn">
+                    <picture>
+                        <source srcset="img/prof-3.webp" type="image/webp">
+                        <img src="img/prof-3.png" loading="lazy" class="approach-block-grid-elem__fon">
+                    </picture>
+                    <picture>
+                        <source srcset="img/int_1.webp" type="image/webp">
+                        <img src="img/int_1.png" loading="lazy" class="approach-block-grid-elem__int">
+                    </picture>
+                    <div class="approach-block-grid-elem__text">Доставляем изделие в оговоренные сроки и производим монтаж. Убираем за собой весь образовавшийся мусор</div>
+                </div>
+                <div class="approach-block-grid-elem wow fadeIn">
+                    <picture>
+                        <source srcset="img/prof-4.webp" type="image/webp">
+                        <img src="img/prof-4.png" loading="lazy" class="approach-block-grid-elem__fon">
+                    </picture>
+                    <picture>
+                        <source srcset="img/int_2.webp" type="image/webp">
+                        <img src="img/int_2.png" loading="lazy" class="approach-block-grid-elem__int">
+                    </picture>
+                    <div class="approach-block-grid-elem__text">Осуществляем сервисное обслуживание в течении всего срока эксплуатации изделия</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма отправки -->
+    <section class="measuring" id="form">
+        <div class="measuring-home" data-bg="img/chb-2.png" data-bg-webp="img/chb-2.webp"></div>
+        <div class="measuring-fon wow fadeIn" data-bg="img/men.png" data-bg-webp="img/men.webp">
+            <div class="measuring-block">
+                <div class="measuring-block-info wow fadeIn">
+                    <div class="measuring-block-info__title">Если Ваш объект на расстоянии<br>50 км от нашего офиса - Замер<br><span>бесплатно</span></div>
+                    <ul class="measuring-block-info-ul">
+                        <li>Специалист сделает замер</li>
+                        <li>Покажет образцы материалов</li>
+                        <li>Проконсультирует по подготовке проема</li>
+                        <li>Поможет выбрать конструкцию под ваш бюджет</li>
+                    </ul>
+                    <a href="gate-is-frozen.html" class="measuring-block-info__button">Условия проведения замера</a>
+                </div>
+                <div class="measuring-block-form wow fadeIn">
+                    <form action="" name="myForm" class="form-submit -validate-form-">
+                        <div class="measuring-block-form__title">Выезд на замер</div>
+                        <label for="name" class="measuring-block-form-label">
+                            <span class="measuring-block-form-label__title">Ваше имя</span>
+                            <input type="text" name="name" id="name" class="measuring-block-form-label__input input__name -validate-name-">
+                            <span class="measuring-block-form-label__error error-name">Пожалуйста, введите Ваше имя!</span>
+                        </label>
+                        <label for="tel" class="measuring-block-form-label">
+                            <span class="measuring-block-form-label__title">Ваш телефон</span>
+                            <input type="tel" name="tel" id="tel" placeholder="8 ( _  _  _ ) _  _  _   -  _  _   -   _  _" class="measuring-block-form-label__input input__tel -validate-phone-">
+                            <span class="measuring-block-form-label__error error-tel">Пожалуйста, введите Ваш телефон!</span>
+                        </label>
+                        <button type="submit" class="page--botton measuring-block-form__submit">Вызвать специалиста</button>
+                        <div data-fancybox data-type="ajax" data-src="modal/perdan-modal.html" class="measuring-block-form__perdan" >Отправляя форму, Вы даете согласие на обработку Ваших персональных данных</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="contact-block contact-grid">
+            <div class="contact-block-info wow fadeIn">
+                <div class="page--title contact-block-info__title">наши контакты</div>
+                <div class="page--subtitle contact-block-info__subtitle">Свяжитесь с нами любым приемлемым способом!</div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-tel.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Звоните</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-geo.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Приезжайте или приходите</span>
+                        <span class="contact-block-info-grid-text__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-mail.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Пишите</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-clock.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">График работы</span>
+                        <span class="contact-block-info-grid-text__subtitle">Производственный цех: c 8:00 до 17:00<br>Операторы: c 8:00 до 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb0be0984a04f95072ef6021d32794142a02bed22dd3b0b02c1a8f0d808c4d9b&amp;source=constructor" frameborder="0" class="contact-block-map wow fadeIn"></iframe>
+        </div>
+        <div class="contact-block contact-invitation">
+            <a href="/"><picture>
+	            <source srcset="img/logo.webp" type="image/webp">
+	            <img src="img/logo.png" loading="lazy" class="contact-invitation__image">
+	        </picture></a>
+            <div class="contact-invitation__info">Приглашаем посетить наше производство и лично убедиться в широком ассортименте и высоком качестве выпускаемой нами продукции </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer wow fadeIn">
+        <div class="footer-block">
+            <span>&copy; 2021 Воротные системы</span>
+            <span>Разработка: <a href="https://stdkit.ru/" target="_blank">Студия К.И.Т.</a></span>
+        </div>
+    </footer>
+
+    <script src="js/formatImg.js"></script>
+    <script src="js/menuScroll.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

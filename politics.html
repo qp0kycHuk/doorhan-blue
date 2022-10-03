@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/ffavicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Виды откатных ворот</title>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="nav">
+        <div class="nav-block">
+            <a href="index.html"><picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <img src="img/logo.png" loading="lazy" class="nav-block__logo">
+            </picture></a>
+            <ul class="nav-block-ul">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <span class="nav-block__tel">
+                <a href="tel: +78612139179">
+                    <img src="img/tel.svg">8 (861) 213-91-79
+                </a>
+            </span>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="nav-block__button">Заказать звонок</button>
+            <div class="nav-block__burger"><div id="burger">
+                <span class="line-1 line"></span><span class="line-2 line"></span><span class="line-3 line"></span>
+            </div></div>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="menu">
+        <ul class="menu-listing">
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="menu-listing-menu__link" href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+            <li><a class="menu-listing-menu__link" href="#contact">Контакты</a></li>
+        </ul>
+        <div class="menu-contact">
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-tel.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Телефон:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-geo.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Адрес:</span>
+                    <span class="menu-contact-grid-info__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-mail.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Почта:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-clock.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">График работы:</span>
+                    <span class="menu-contact-grid-info__subtitle">Производственный цех: c 8:00 до 17:00 Операторы: c 8:00 до 20:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Виды ворот (заголовок) -->
+    <section class="types-of-sliding-gates-header hero" data-bg="img/volna-gates.png" data-bg-webp="img/volna-gates.webp">
+        <div class="types-of-sliding-gates-header-block">
+            <div class="page--title types-of-sliding-gates-header-block__title wow fadeIn">Политика Конфиденциальности</div>
+            <div class="types-of-sliding-gates-header-block__subtitle wow fadeIn">
+                Настоящая политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт Индивидуального предпринимателя Солодовник Евгении Васильевны (далее – ИП Солодовник Е.В.), расположенный на доменных именах doorhan-krd.ru, vorotnye-sistemy.com, воротныесистемы.рф, может получить о Пользователе во время использования сайта при заполнении ими форм обратной связи для получения консультаций по вопросам проведения экспертизы, оценки, предоставления юридических услуг.
+            </div>
+        </div>
+    </section>
+
+    <!-- Виды ворот -->
+    <div class="perdan-modal">
+        <div class="perdan-modal__subtitle">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</div>
+        <p class="perdan-modal__text">
+            1.1. В настоящей Политике конфиденциальности используются следующие термины:
+        </p>
+        <p class="perdan-modal__text">
+            1.1.1. «Администрация сайта» – уполномоченные на управления сайтом сотрудники, действующие от имени ИП Солодовник Е.В., которые организуют и (или) осуществляют обработку персональных данных, а также определяют цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+        </p>
+        <p class="perdan-modal__text">
+            1.1.3. «Обработка персональных данных» — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+        </p>
+        <p class="perdan-modal__text">
+            1.1.4. «Конфиденциальность персональных данных» — обязательное для соблюдения Оператором или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.
+        </p>
+        <p class="perdan-modal__text">
+            1.1.5. «Пользователь сайта» (далее — «Пользователь») – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт.
+        </p>
+        <p class="perdan-modal__text">
+            1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.
+        </p>
+        <p class="perdan-modal__text">
+            1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.
+        </p>
+        <div class="perdan-modal__subtitle">2. ОБЩИЕ ПОЛОЖЕНИЯ</div>
+        <p class="perdan-modal__text">
+            2.1. Использование Пользователем сайта ИП Солодовник Е.В. означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.
+        </p>
+        <p class="perdan-modal__text">
+            2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта.
+        </p>
+        <p class="perdan-modal__text">
+            2.3. Настоящая Политика конфиденциальности применяется только к сайту ИП Солодовник Е.В.. Сайт не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте.
+        </p>
+        <p class="perdan-modal__text">
+            2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта.
+        </p>
+        <div class="perdan-modal__subtitle">3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</div>
+        <p class="perdan-modal__text">
+            3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при заполнении форм обратной связи для получения консультаций по вопросам проведения экспертизы, оценки, предоставления юридических услуг.
+        </p>
+        <p class="perdan-modal__text">
+            3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения форм заявок на получение консультаций по вопросам стоимости и технических характеристик изделий, представленных на сайтах ИП Солодовник Е.В. и включают в себя следующую информацию:
+        </p>
+        <p class="perdan-modal__text">
+            3.2.1. имя Пользователя;
+        </p>
+        <p class="perdan-modal__text">
+            3.2.2. контактный телефон Пользователя;
+        </p>
+        <p class="perdan-modal__text">
+            3.3. Сайт защищает Данные, которые автоматически передаются в процессе посещении страниц, на которых установлен статистический скрипт системы:<br>
+            IP адрес;<br>
+            информация из cookies;<br>
+            информация о браузере;<br>
+            время доступа;<br>
+            адрес страницы, на которой расположен рекламный блок;<br>
+            реферер (адрес предыдущей страницы).
+        </p>
+        <p class="perdan-modal__text">
+            3.4. Любая иная персональная информация, неоговоренная выше (используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+        </p>
+        <div class="perdan-modal__subtitle">4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ</div>
+        <p class="perdan-modal__text">
+            4.1. Персональные данные Пользователя Администрация сайта может использовать в целях:
+        </p>
+        <p class="perdan-modal__text">
+            4.1.1. Идентификации Пользователя для предоставления ему консультаций по вопросам стоимости и технических характеристик изделий, представленных на сайтах ИП Солодовник Е.В.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам Сайта.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования Сайта, оказания услуг, обработка запросов и заявок от Пользователя.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.6. Уведомления Пользователя Сайта о состоянии рассмотрения обращения.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.7. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем, связанных с использованием Сайта.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.8. Предоставления Пользователю с его согласия, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени Сайта или от имени партнеров Сайта.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.9. Осуществления рекламной деятельности с согласия Пользователя.
+        </p>
+        <p class="perdan-modal__text">
+            4.1.10. Предоставления доступа Пользователю на сайты или сервисы партнеров сайта с целью получения продуктов, обновлений и услуг.
+        </p>
+        <div class="perdan-modal__subtitle">5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</div>
+        <p class="perdan-modal__text">
+            5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.
+        </p>
+        <p class="perdan-modal__text">
+            5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на Сайте ИП Солодовник Е.В..
+        </p>
+        <p class="perdan-modal__text">
+            5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.
+        </p>
+        <p class="perdan-modal__text">
+            5.4. При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.
+        </p>
+        <p class="perdan-modal__text">
+            5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.
+        </p>
+        <div class="perdan-modal__subtitle">6. ОБЯЗАТЕЛЬСТВА СТОРОН</div>
+        <p class="perdan-modal__text">
+            6.1. Пользователь обязан:
+        </p>
+        <p class="perdan-modal__text">
+            6.1.1. Предоставить информацию о персональных данных, необходимую для пользования Сайтом.
+        </p>
+        <p class="perdan-modal__text">
+            6.1.2. Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.
+        </p>
+        <p class="perdan-modal__text">
+            6.2. Администрация сайта обязана:
+        </p>
+        <p class="perdan-modal__text">
+            6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.
+        </p>
+        <p class="perdan-modal__text">
+            6.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+        </p>
+        <p class="perdan-modal__text">
+            6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.
+        </p>
+        <p class="perdan-modal__text">
+            6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя, или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+        </p>
+        <div class="perdan-modal__subtitle">7. ОТВЕТСТВЕННОСТЬ СТОРОН</div>
+        <p class="perdan-modal__text">
+            7.1. Администрация сайта, не исполнившая свои обязательства, несёт ответственность в соответствии с законодательством Российской Федерации, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности.
+        </p>
+        <p class="perdan-modal__text">
+            7.2. В случае утраты или разглашения Конфиденциальной информации Администрация сайта не несёт ответственность, если данная конфиденциальная информация:
+        </p>
+        <p class="perdan-modal__text">
+            7.2.1. Стала публичным достоянием до её утраты или разглашения.
+        </p>
+        <p class="perdan-modal__text">
+            7.2.2. Была получена от третьей стороны до момента её получения Администрацией сайта.
+        </p>
+        <p class="perdan-modal__text">
+            7.2.3. Была разглашена с согласия Пользователя.
+        </p>
+        <div class="perdan-modal__subtitle">8. РАЗРЕШЕНИЕ СПОРОВ</div>
+        <p class="perdan-modal__text">
+            8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем сайта и Администрацией сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).
+        </p>
+        <p class="perdan-modal__text">
+            8.2. Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.
+        </p>
+        <p class="perdan-modal__text">
+            8.3. При не достижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством Российской Федерации.
+        </p>
+        <p class="perdan-modal__text">
+            8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство Российской Федерации.
+        </p>
+        <div class="perdan-modal__subtitle">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</div>
+        <p class="perdan-modal__text">
+            9.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.
+        </p>
+        <p class="perdan-modal__text">
+            9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.
+        </p>
+    </div>
+
+    <!-- Форма отправки -->
+    <section class="measuring">
+        <div class="measuring-home" data-bg="img/chb-2.png" data-bg-webp="img/chb-2.webp"></div>
+        <div class="measuring-fon wow fadeIn" data-bg="img/men.png" data-bg-webp="img/men.webp">
+            <div class="measuring-block">
+                <div class="measuring-block-info wow fadeIn">
+                    <div class="measuring-block-info__title">Если Ваш объект на расстоянии<br>50 км от нашего офиса - Замер<br><span>бесплатно</span></div>
+                    <ul class="measuring-block-info-ul">
+                        <li>Специалист сделает замер</li>
+                        <li>Покажет образцы материалов</li>
+                        <li>Проконсультирует по подготовке проема</li>
+                        <li>Поможет выбрать конструкцию под ваш бюджет</li>
+                    </ul>
+                    <a href="gate-is-frozen.html" class="measuring-block-info__button">Условия проведения замера</a>
+                </div>
+                <div class="measuring-block-form wow fadeIn">
+                    <form action="" name="myForm" class="form-submit -validate-form-">
+                        <div class="measuring-block-form__title">Выезд на замер</div>
+                        <label for="name" class="measuring-block-form-label">
+                            <span class="measuring-block-form-label__title">Ваше имя</span>
+                            <input type="text" name="name" id="name" class="measuring-block-form-label__input input__name -validate-name-">
+                            <span class="measuring-block-form-label__error error-name">Пожалуйста, введите Ваше имя!</span>
+                        </label>
+                        <label for="tel" class="measuring-block-form-label">
+                            <span class="measuring-block-form-label__title">Ваш телефон</span>
+                            <input type="tel" name="tel" id="tel" placeholder="8 ( _  _  _ ) _  _  _   -  _  _   -   _  _" class="measuring-block-form-label__input input__tel -validate-phone-">
+                            <span class="measuring-block-form-label__error error-tel">Пожалуйста, введите Ваш телефон!</span>
+                        </label>
+                        <button type="submit" class="page--botton measuring-block-form__submit">Вызвать специалиста</button>
+                        <div data-fancybox data-type="ajax" data-src="modal/perdan-modal.html" class="measuring-block-form__perdan" >Отправляя форму, Вы даете согласие на обработку Ваших персональных данных</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="contact-block contact-grid">
+            <div class="contact-block-info wow fadeIn">
+                <div class="page--title contact-block-info__title">наши контакты</div>
+                <div class="page--subtitle contact-block-info__subtitle">Свяжитесь с нами любым приемлемым способом!</div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-tel.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Звоните</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-geo.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Приезжайте или приходите</span>
+                        <span class="contact-block-info-grid-text__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-mail.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Пишите</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-clock.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">График работы</span>
+                        <span class="contact-block-info-grid-text__subtitle">Производственный цех: c 8:00 до 17:00<br>Операторы: c 8:00 до 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb0be0984a04f95072ef6021d32794142a02bed22dd3b0b02c1a8f0d808c4d9b&amp;source=constructor" frameborder="0" class="contact-block-map wow fadeIn"></iframe>
+        </div>
+        <div class="contact-block contact-invitation">
+            <a href="/"><picture>
+	            <source srcset="img/logo.webp" type="image/webp">
+	            <img src="img/logo.png" loading="lazy" class="contact-invitation__image">
+	        </picture></a>
+            <div class="contact-invitation__info">Приглашаем посетить наше производство и лично убедиться в широком ассортименте и высоком качестве выпускаемой нами продукции </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer wow fadeIn">
+        <div class="footer-block">
+            <span>&copy; 2021 Воротные системы</span>
+            <span>Разработка: <a href="https://stdkit.ru/" target="_blank">Студия К.И.Т.</a></span>
+        </div>
+    </footer>
+
+    <script src="js/formatImg.js"></script>
+    <script src="js/menuScroll.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
