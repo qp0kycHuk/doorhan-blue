@@ -146,16 +146,25 @@ new Swiper('.kinds-block-slider .image-slider', {
 });
 
 const cardDetailBullets = new Swiper('.card-detail-bullets .swiper-container', {
-    slidesPerView: 4,
     watchSlidesProgress: true,
     freeMode: true,
-    spaceBetween: 10
+    spaceBetween: 10,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 3,
+        },
+
+        1120: {
+            slidesPerView: 4,
+        }
+    }
 })
 
 const cardDetailSlider = new Swiper('.card-detail-slider .swiper-container', {
     slidesPerView: 1,
     watchSlidesProgress: true,
-    spaceBetween:20,
+    spaceBetween: 20,
     thumbs: {
         swiper: cardDetailBullets,
     }
