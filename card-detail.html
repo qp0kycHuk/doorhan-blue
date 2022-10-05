@@ -190,11 +190,13 @@
                     <div class="card-detail__container">
                         <div class="card-detail__elems">
                             <div class="quantity">
-                                <button class="quantity__btn">-</button>
-                                <input class="quantity__input" type="text" value="1">
-                                <button class="quantity__btn">+</button>
+                                <button class="quantity__btn -decrease-">-</button>
+                                <input class="quantity__input -quantity-" type="text" value="1">
+                                <button class="quantity__btn -increase-">+</button>
                             </div>
-                            <div class="card-detail__price">1230 руб</div>
+                            <div class="card-detail__price">
+                                <span class="-price-">1230</span> руб
+                            </div>
                             <button class="card-detail__btn page--botton" data-fancybox data-type="ajax" data-src="modal/form-modal.html">Заказать</button>
                         </div>
                         <div class="card-detail__specifications">Характеристики</div>
@@ -352,6 +354,7 @@ doorhan-krd.ru, vorotnye-sistemy.com, воротныесистемы.рф, мо�
     <script src="jquery/jquery.min.js"></script>
     <script src="jquery/jquery.fancybox.min.js"></script>
     <script src="jquery/fancybox.js"></script>
+    <script src="js/quantity.js"></script>
     <script>
         new WOW().init();
     </script>
