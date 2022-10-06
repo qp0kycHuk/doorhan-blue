@@ -5172,10 +5172,19 @@ a.navigation__item:hover {
     border-bottom : 1px solid rgba(219, 219, 219, 0.4);
 }
 
+.accordion__item:is([data-accordion="active"])>.accordion__head .accordion__arrow,
+.accordion__item:is([data-child="active"])>.accordion__head .accordion__arrow {
+    transform: rotate(90deg);
+}
+
 .accordion__item:last-child {
     margin-bottom : 0;
     padding-bottom: 0;
     border        : none;
+}
+
+.accordion__item .accordion__item:first-child {
+    margin-top: 10px;
 }
 
 a.accordion__item {
@@ -5185,19 +5194,6 @@ a.accordion__item {
 
 a.accordion__item:hover {
     text-decoration: underline;
-}
-
-
-.accordion__checkbox {
-    display: none;
-}
-
-.accordion__checkbox:checked+.accordion__head .accordion__arrow {
-    transform: rotate(90deg);
-}
-
-.accordion__checkbox:checked~.accordion__body {
-    max-height: 10em;
 }
 
 .accordion__head {
@@ -5217,15 +5213,23 @@ a.accordion__item:hover {
     color      : #2B3139;
 }
 
+.accordion__subtitle {
+    font-family: 'SF Pro Display';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 17px;
+    color      : #2B3139;
+}
+
 .accordion__arrow {
     width     : 20px;
     transition: 0.2s;
 }
 
-.accordion__body {
-    max-height: 0;
+.accordion__content {
     overflow  : hidden;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .accordion__links {
