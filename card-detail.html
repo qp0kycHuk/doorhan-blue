@@ -188,17 +188,18 @@
                     </div>
                     <div class="card-detail__number">Артикул: 1289435</div>
                     <div class="card-detail__container">
-                        <div class="card-detail__elems">
+                        <form class="card-detail__elems -sending-form-">
                             <div class="quantity">
-                                <button class="quantity__btn -decrease-">-</button>
-                                <input class="quantity__input -quantity-" type="text" value="1">
-                                <button class="quantity__btn -increase-">+</button>
+                                <button class="quantity__btn -decrease-" type="button">-</button>
+                                <input class="quantity__input -quantity-" type="text" value="1" disabled>
+                                <button class="quantity__btn -increase-" type="button">+</button>
                             </div>
                             <div class="card-detail__price">
                                 <span class="-price-">1230</span> руб
+                                <input class="-price-input-" type="hidden">
                             </div>
-                            <button class="card-detail__btn page--botton" data-fancybox data-type="ajax" data-src="modal/form-modal.html">Заказать</button>
-                        </div>
+                            <button class="card-detail__btn page--botton" type="submit">Заказать</button>
+                        </form>
                         <div class="card-detail__specifications">Характеристики</div>
                         <div class="card-detail__items">
                             <div class="card-detail__item">
@@ -349,6 +350,7 @@ doorhan-krd.ru, vorotnye-sistemy.com, воротныесистемы.рф, мо�
     <script src="js/modal.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/card-form.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="jquery/jquery.min.js"></script>

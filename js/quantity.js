@@ -1,4 +1,5 @@
 const price = document.querySelector('.-price-')
+const priceInput = document.querySelector('.-price-input-')
 let currentPrice = Number(price.textContent)
 
 const quantityIncrease = (event) => {
@@ -11,6 +12,7 @@ const quantityIncrease = (event) => {
     quantity.value = String(quantityValue)
 
     price.innerText = String(currentPrice * quantityValue)
+    priceInput.value = String(currentPrice * quantityValue)
 
 }
 
@@ -23,11 +25,13 @@ const quantityDecrease = (event) => {
     --quantityValue
     quantity.value = String(quantityValue)
     price.innerText = String(currentPrice * quantityValue)
+    priceInput.value = String(currentPrice * quantityValue)
 
     if (quantityValue < 1) {
 
         quantity.value = '1'
         price.innerText = currentPrice
+        priceInput.value = currentPrice
     }
 
 }
