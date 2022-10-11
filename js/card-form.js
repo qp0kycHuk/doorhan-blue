@@ -16,7 +16,6 @@ const sendingData = (event) => {
         src: requestUrl,
     });
 
-    form.reset()
     submitBtn.removeAttribute('disabled')
 
 }
