@@ -2,6 +2,10 @@ const price = document.querySelector('.-price-')
 const priceInput = document.querySelector('.-price-input-')
 let currentPrice = Number(price.textContent)
 
+priceInput.value = currentPrice
+
+console.log(priceInput);
+
 const quantityIncrease = (event) => {
 
     const block = event.target.parentElement
