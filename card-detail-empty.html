@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/ffavicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Воротные системы</title>
+</head>
+<body> 
+
+    <!-- Навигационное меню -->
+    <nav class="nav">
+        <div class="nav-block">
+            <a href="index.html"><picture>
+                <source srcset="img/logo.webp" type="image/webp">
+                <img src="img/logo.png" loading="lazy" class="nav-block__logo">
+            </picture></a>
+            <ul class="nav-block-ul">
+                <li class="nav-block-ul-menu">
+                    Производство ворот<img src="img/arrow-right.svg">
+                    <ul class="nav-block-ul-menu-submenu">
+                        <li><a href="rollback-gates.html">Откатные ворота</a></li>
+                        <li><a href="swing -gates.html">Распашные ворота</a></li>
+                    </ul>
+                </li>
+                <li class="nav-block-ul-menu">
+                    Ворота Doorhan<img src="img/arrow-right.svg">
+                    <ul class="nav-block-ul-menu-submenu">
+                        <li><a href="sliding-gates.html">Откатные</a></li>
+                        <li><a href="open-gates.html">Распашные</a></li>
+                        <li><a href="section-doorhan.html">Секционные</a></li>
+                        <li><a href="rolgates-doorhan.html">Рольворота</a></li>
+                        <li><a href="industrial-gates.html">Промышленные</a></li>
+                        <li><a href="window-shutters.html">Роллеты на окна</a></li>
+                    </ul>
+                </li>
+                <li><a href="#form">Замер</a></li>
+                <li><a href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="">Каталог</a></li>
+            </ul>
+            <span class="nav-block__tel">
+                <a href="tel: +78612139179">
+                    <img src="img/tel.svg">8 (861) 213-91-79
+                </a>
+            </span>
+            <button data-fancybox data-type="ajax" data-src="modal/form-modal.html" class="nav-block__button">Заказать звонок</button>
+            <div class="nav-block__burger"><div id="burger">
+                <span class="line-1 line"></span><span class="line-2 line"></span><span class="line-3 line"></span>
+            </div></div>
+        </div>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="menu">
+        <ul class="menu-listing">
+            <li class="menu-listing-menu">
+                Производство ворот<img src="img/arrow-right.svg" class="gates-submenu__arrow">
+            </li>
+            <ul class="menu-listing-menu-submenu">
+                <li><a href="rollback-gates.html">Откатные ворота</a></li>
+                <li><a href="swing -gates.html">Распашные ворота</a></li>
+            </ul>
+            <li class="menu-listing-menu">
+                Ворота Doorhan<img src="img/arrow-right.svg" class="gates-submenu__arrow">
+            </li>
+            <ul class="menu-listing-menu-submenu">
+                <li><a href="sliding-gates.html">Откатные</a></li>
+                <li><a href="open-gates.html">Распашные</a></li>
+                <li><a href="section-doorhan.html">Секционные</a></li>
+                <li><a href="rolgates-doorhan.html">Рольворота</a></li>
+                <li><a href="industrial-gates.html">Промышленные</a></li>
+                <li><a href="window-shutters.html">Роллеты на окна</a></li>
+            </ul>
+            <li><a class="menu-listing-menu__link" href="#form">Замер</a></li>
+            <li><a class="menu-listing-menu__link" href="document/rek_list_vorotnie_sistemi.pdf" target="_blank">Реквизиты</a></li>
+            <li><a class="menu-listing-menu__link" href="#contact">Контакты</a></li>
+            <li><a class="menu-listing-menu__link" href="">Каталог</a></li>
+        </ul>
+        <div class="menu-contact">
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-tel.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Телефон:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-geo.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Адрес:</span>
+                    <span class="menu-contact-grid-info__subtitle">ст. Пластуновская, ул. Пролетарская дом 74</span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-mail.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">Почта:</span>
+                    <span class="menu-contact-grid-info__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                </div>
+            </div>
+            <div class="menu-contact-grid">
+                <div class="menu-contact-grid__icon">
+                    <img src="img/contact-clock.svg">
+                </div>
+                <div class="menu-contact-grid-info">
+                    <span class="menu-contact-grid-info__title">График работы:</span>
+                    <span class="menu-contact-grid-info__subtitle">Производственный цех: c 8:00 до 17:00 Операторы: c 8:00 до 20:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Детальная -->
+    <section class="card-detail hero">
+        <div class="card-detail__block">
+            <div class="navigation">
+                <a class="navigation__item" href="">Главная</a>
+                <a class="navigation__item" href=""> > Каталог</a>
+                <span class="navigation__item"> > Привод, 2 пульта</span>
+            </div>
+            <div class="card-detail__content">
+                <div class="card-detail__sliders">
+                    <div class="card-detail-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="card-detail-slider__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-slider__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-slider__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-slider__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-slider__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-detail-bullets">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="card-detail-bullets__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-bullets__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-bullets__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-bullets__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                                <div class="card-detail-bullets__slide swiper-slide">
+                                    <img class="card-detail__img" src="img/kinds_3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-detail__info">
+                    <div class="card-detail__title">
+                        Привод, 2 пульта, фотоэлементы, лампа со встроенной антенной				
+                    </div>
+                    <div class="card-detail__number">Артикул: 1289435</div>
+                    <div class="card-detail__container">
+                        <form class="card-detail__elems -sending-form-">
+                            <div class="quantity">
+                                <button class="quantity__btn -decrease-" type="button">-</button>
+                                <input class="quantity__input -quantity-" type="text" value="1" disabled>
+                                <button class="quantity__btn -increase-" type="button">+</button>
+                            </div>
+                            <div class="card-detail__price">
+                                <span class="-price-">1230</span> руб
+                                <input class="-price-input-" type="hidden">
+                            </div>
+                            <button class="card-detail__btn page--botton" type="submit">Заказать</button>
+                        </form>
+                        <div class="card-detail__specifications">Характеристики</div>
+                        <div class="card-detail__items">
+                            <div class="card-detail__item">
+                                <div class="card-detail__name">Двигатель</div>
+                                <div class="card-detail__meaning">230В</div>
+                            </div>
+                            <div class="card-detail__item">
+                                <div class="card-detail__name">Мощность</div>
+                                <div class="card-detail__meaning">250 Вт</div>
+                            </div>
+                            <div class="card-detail__item">
+                                <div class="card-detail__name">Тяговое усилие</div>
+                                <div class="card-detail__meaning">500H</div>
+                            </div>
+                        </div>
+                        <a class="card-detail__link" href="#description">Все характеристики</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab" id="description">
+                <input class="tab__radio tab__radio--1" type="radio" id="card-1" name="tab-radio" checked>
+                <input class="tab__radio tab__radio--2" type="radio" id="card-2" name="tab-radio">
+                <input class="tab__radio tab__radio--3" type="radio" id="card-3" name="tab-radio">
+                <div class="tab__items">
+                    <label class="tab__item tab__item--1" for="card-1">Описание</label>
+                    <label class="tab__item tab__item--2" for="card-2">Характеристики</label>
+                    <label class="tab__item tab__item--3" for="card-3">Комплектация</label>
+                </div>
+                <div class="tab__cards">
+                    <div class="tab__card tab__card--1">
+                        <div class="card-detail__empty">
+                            Описание будет скоро добавлено 
+                        </div>
+                    </div>
+                    <div class="tab__card tab__card--2">
+                        <div class="card-detail__empty">
+                            fsdfsdfsfsdfsdfsdfdsfsdfsd 
+                        </div>
+                    </div>
+                    <div class="tab__card tab__card--3">
+                        <div class="card-detail__empty">
+                            liulkuyjth
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="contact-block">
+            <div class="page--title contact-block-info__title">наши контакты</div>
+            <div class="page--subtitle contact-block-info__subtitle">Свяжитесь с нами любым приемлемым способом!</div>
+            <div class="contacts__items">
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-tel.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Звоните</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="tel: +78612139179">8 (861) 213-91-79</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-geo.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Приезжайте или приходите</span>
+                        <span class="contact-block-info-grid-text__subtitle">ст. Пластуновская, <br>ул. Пролетарская дом 74</span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-mail.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">Пишите</span>
+                        <span class="contact-block-info-grid-text__subtitle"><a href="mailto: doorhan-krd@yandex.ru">doorhan-krd@yandex.ru</a></span>
+                    </div>
+                </div>
+                <div class="contact-block-info-grid">
+                    <div class="contact-block-info-grid__icon">
+                        <img src="img/contact-clock.svg">
+                    </div>
+                    <div class="contact-block-info-grid-text">
+                        <span class="contact-block-info-grid-text__title">График работы</span>
+                        <span class="contact-block-info-grid-text__subtitle">Производственный цех:<br> c 8:00 до 17:00<br>Операторы: c 8:00 до 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__map">
+                <input class="contact__checkbox" type="checkbox" name="" id="iframe-map">
+                <label class="contact__head" for="iframe-map">
+                    <span class="contact__name contact__name--1">Развернуть карту</span>
+                    <span class="contact__name contact__name--2">Свернуть карту</span>
+                </label>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acb0be0984a04f95072ef6021d32794142a02bed22dd3b0b02c1a8f0d808c4d9b&amp;source=constructor" frameborder="0" class="contact-block-map"></iframe>
+            </div>
+        </div>
+        <div class="contact-block contact-invitation">
+            <a href="/"><picture>
+	            <source srcset="img/logo.webp" type="image/webp">
+	            <img src="img/logo.png" loading="lazy" class="contact-invitation__image">
+	        </picture></a>
+            <div class="contact-invitation__info">Приглашаем посетить наше производство и лично убедиться в широком ассортименте и высоком качестве выпускаемой нами продукции </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer wow fadeIn">
+        <div class="footer-block">
+            <span>&copy; 2021 Воротные системы</span>
+            <span>Разработка: <a href="https://stdkit.ru/" target="_blank">Студия К.И.Т.</a></span>
+        </div>
+    </footer>
+    
+    <script src="js/formatImg.js"></script>
+    <script src="js/menuScroll.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/card-form.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="jquery/jquery.fancybox.min.js"></script>
+    <script src="jquery/fancybox.js"></script>
+    <script src="js/quantity.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
