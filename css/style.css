@@ -5253,12 +5253,16 @@ a.accordion__item:hover {
     width          : max-content;
 }
 
+.accordion__link--active {
+    font-weight   : bold;
+    pointer-events: none;
+}
+
 .accordion__link:last-child {
     margin-bottom: 0;
 }
 
 .accordion__link:hover {
-    font-weight    : bold;
     text-decoration: underline;
 }
 
