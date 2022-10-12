@@ -5300,13 +5300,14 @@ a.accordion__item:hover {
 }
 
 .catalog__item {
-    background    : #FFFFFF;
-    box-shadow    : 0px 6px 20px rgba(0, 0, 0, 0.04);
-    border-radius : 10px;
-    display       : flex;
-    flex-direction: column;
-    flex-grow     : 1;
-    transition    : 0.2s box-shadow linear;
+    background     : #FFFFFF;
+    box-shadow     : 0px 6px 20px rgba(0, 0, 0, 0.04);
+    border-radius  : 10px;
+    display        : flex;
+    flex-direction : column;
+    flex-grow      : 1;
+    text-decoration: none;
+    transition     : 0.2s box-shadow linear;
 }
 
 .catalog__item:hover {
@@ -5364,6 +5365,9 @@ a.accordion__item:hover {
     justify-content: center;
     margin-top     : auto;
     width          : max-content;
+    outline        : none;
+    border         : none;
+    text-decoration: none;
 }
 
 .catalog__btn:hover {
@@ -5528,12 +5532,12 @@ a.accordion__item:hover {
 
 .card-detail__img {
     position  : absolute;
-    top       : 0;
-    left      : 0;
-    right     : 0;
-    bottom    : 0;
-    width     : 100%;
-    height    : 100%;
+    top       : 10%;
+    left      : 10%;
+    right     : 10%;
+    bottom    : 10%;
+    width     : 80%;
+    height    : 80%;
     object-fit: scale-down;
 }
 
