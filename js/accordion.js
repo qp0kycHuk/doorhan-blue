@@ -32,9 +32,19 @@ accordions.forEach((item) => {
         const childToggle = el.querySelector('*[data-child-toggle]')
         const childContent = el.querySelector('*[data-child-content]')
 
-        if (el.dataset.child == 'hidden') childContent.style.height = '0'
+        if (el.dataset.child == 'hidden') {
 
-        if (el.dataset.child == 'active') childContent.style.height = `${childContent.scrollHeight}px`
+            childContent.style.height = '0'
+            content.style.height = `auto`
+
+        }
+
+        if (el.dataset.child == 'active') {
+
+            childContent.style.height = `${childContent.scrollHeight}px`
+            content.style.height = `${content.scrollHeight + childContent.scrollHeight}px`
+            
+        }
 
         childToggle.addEventListener('click', () => {
 
