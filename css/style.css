@@ -5120,6 +5120,12 @@ a.navigation__item:hover {
     pointer-events: none;
 }
 
+@media(max-width: 576px) {
+    .navigation {
+        display: none;
+    }
+}
+
 .catalog__block {
     width : 1120px;
     margin: 0 auto;
