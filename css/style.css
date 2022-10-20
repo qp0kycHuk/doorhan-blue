@@ -5505,7 +5505,6 @@ a.accordion__item:hover {
 .card-detail__content {
     display        : flex;
     justify-content: space-between;
-    align-items    : center;
     grid-gap       : 50px;
     margin-bottom  : 30px;
 }
