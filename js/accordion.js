@@ -45,6 +45,8 @@ accordions.forEach((item) => {
 
             childContent.style.height = `${childContent.scrollHeight}px`
             content.style.height = `${content.scrollHeight + childContent.scrollHeight}px`
+
+            if (accordion.dataset.accordion == 'active') content.style.height = 'auto'
             
         }
 
