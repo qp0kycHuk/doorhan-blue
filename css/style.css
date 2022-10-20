@@ -5543,13 +5543,13 @@ a.accordion__item:hover {
 
 .card-detail__img {
     position  : absolute;
-    top       : 10%;
-    left      : 10%;
-    right     : 10%;
-    bottom    : 10%;
-    width     : 80%;
-    height    : 80%;
-    object-fit: scale-down;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    bottom    : 0;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
 }
 
 .card-detail__info {
@@ -5840,5 +5840,34 @@ a.accordion__item:hover {
     .card-detail__meaning,
     .card-detail__text {
         font-size: 14px;
+    }
+}
+
+.back-btn {
+    background     : linear-gradient(180deg, rgba(255, 209, 167, 0.4) 0%, rgba(233, 122, 19, 0.4) 100%), #E97A13;
+    border-radius  : 4px;
+    padding        : 13px 27px;
+    font-family    : 'SF Pro Display';
+    font-style     : normal;
+    font-weight    : 700;
+    font-size      : 16px;
+    line-height    : 19px;
+    color          : #FFFFFF;
+    display        : none;
+    align-items    : center;
+    justify-content: center;
+    width          : max-content;
+    text-decoration: none;
+    margin-bottom  : 20px;
+}
+
+.back-btn__icon {
+    width       : 16px;
+    margin-right: 8px;
+}
+
+@media(max-width: 576px) {
+    .back-btn {
+        display: flex;
     }
 }
