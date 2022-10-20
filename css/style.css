@@ -5247,6 +5247,7 @@ a.accordion__item:hover {
     display       : flex;
     flex-direction: column;
     padding-left  : 20px;
+    margin-bottom : 12px;
 }
 
 .accordion__link {
