@@ -5871,3 +5871,52 @@ a.accordion__item:hover {
         display: flex;
     }
 }
+
+.catalog__empty {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    text-align     : center;
+}
+
+.catalog__empty-img {
+    width        : 100%;
+    margin-bottom: 30px;
+}
+
+.catalog__empty-title {
+    font-family  : 'SF Pro Display';
+    font-style   : normal;
+    font-weight  : 600;
+    font-size    : 28px;
+    line-height  : 33px;
+    text-align   : center;
+    color        : #1A1A1A;
+    margin-bottom: 10px;
+}
+
+.catalog__empty-subtitle {
+    font-family: 'SF Pro Display';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 19px;
+    text-align : center;
+    color      : #333333;
+}
+
+@media(max-width: 576px) {
+    .catalog__empty-img {
+        margin-bottom: 20px;
+    }
+
+    .catalog__empty-title {
+        font-size    : 20px;
+        margin-bottom: 15px;
+    }
+
+    .catalog__empty-subtitle {
+        font-size: 14px;
+    }
+}
