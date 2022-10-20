@@ -37,6 +37,8 @@ accordions.forEach((item) => {
             childContent.style.height = '0'
             content.style.height = `auto`
 
+            if (accordion.dataset.accordion == 'hidden') content.style.height = '0'
+
         }
 
         if (el.dataset.child == 'active') {
