@@ -5222,7 +5222,7 @@ a.accordion__item:hover {
     font-weight: 700;
 }
 
-.accordion__title--active {
+a.accordion__title--active {
     text-decoration: underline;
 }
 
