@@ -5223,6 +5223,10 @@ a.accordion__item:hover {
     font-weight: 700;
 }
 
+.accordion__title--active {
+    text-decoration: underline;
+}
+
 .accordion__subtitle {
     font-family: 'SF Pro Display';
     font-style : normal;
