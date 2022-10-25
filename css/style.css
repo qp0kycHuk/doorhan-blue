@@ -5265,8 +5265,9 @@ a.accordion__item:hover {
 }
 
 .accordion__link--active {
-    font-weight   : bold;
-    pointer-events: none;
+    text-decoration: underline;
+    font-weight    : bold;
+    pointer-events : none;
 }
 
 .accordion__link:last-child {
