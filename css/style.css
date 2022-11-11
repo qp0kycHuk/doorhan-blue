@@ -4942,13 +4942,13 @@ nav {
 
 
 .garage-buner-block {
-    display         : flex;
-    align-items     : center;
-    background      : #FFFFFF;
-    box-shadow      : 0px 6px 14px rgba(0, 0, 0, 0.12);
-    border-radius   : 10px;
-    padding-right   : 64px;
-    padding-left    : 60px;
+    display      : flex;
+    align-items  : center;
+    background   : #FFFFFF;
+    box-shadow   : 0px 6px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    padding-right: 64px;
+    padding-left : 60px;
 }
 
 .garage-buner__title {
@@ -5323,10 +5323,31 @@ a.accordion__title--active {
     flex-grow      : 1;
     text-decoration: none;
     transition     : 0.2s box-shadow linear;
+    position       : relative;
 }
 
 .catalog__item:hover {
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalog__shildig {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 91px;
+    height         : 34px;
+    font-family    : 'BuyanBold';
+    font-style     : normal;
+    font-weight    : 700;
+    font-size      : 16px;
+    line-height    : 130%;
+    color          : #2B3139;
+    background     : url('../img/shildig.png') no-repeat center;
+    background-size: 100%;
+    position       : absolute;
+    top            : 16px;
+    left           : -6px;
+    z-index        : 1;
 }
 
 .catalog__pic {
@@ -5520,9 +5541,28 @@ a.accordion__title--active {
 
 .card-detail-slider {
     background   : #FFFFFF;
-    border-radius: 10px;
-    overflow     : hidden;
+    position     : relative;
     margin-bottom: 6px;
+}
+
+.card-detail-slider__shildig {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 176px;
+    height         : 65px;
+    font-family    : 'BuyanBold';
+    font-style     : normal;
+    font-weight    : 700;
+    font-size      : 32px;
+    line-height    : 130%;
+    color          : #2B3139;
+    background     : url('../img/shildig.png') no-repeat center;
+    background-size: 100%;
+    position       : absolute;
+    top            : 16px;
+    left           : -12px;
+    z-index        : 1;
 }
 
 .card-detail-slider__slide,
@@ -5578,10 +5618,6 @@ a.accordion__title--active {
     line-height  : 17px;
     color        : #2B3139;
     margin-bottom: 30px;
-}
-
-.card-detail__container {
-    max-width: 460px;
 }
 
 .card-detail__elems {
@@ -5643,6 +5679,17 @@ a.accordion__title--active {
     font-size  : 42px;
     line-height: 130%;
     color      : #2B3139;
+}
+
+.card-detail__price-old {
+    font-family         : 'BuyanBold';
+    font-style          : normal;
+    font-weight         : 400;
+    font-size           : 32px;
+    line-height         : 130%;
+    text-decoration-line: line-through;
+    color               : #2B3139;
+    opacity             : 0.6;
 }
 
 .card-detail__btn {
