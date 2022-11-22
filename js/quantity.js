@@ -23,13 +23,13 @@ const quantityIncrease = (event) => {
 
     ++quantityValue
     quantity.value = String(quantityValue)
-
-    price.innerText = String(currentPrice * quantityValue)
+    // new Intl.NumberFormat('ru').format(currentPrice)
+    price.innerText = new Intl.NumberFormat('ru').format(String(currentPrice * quantityValue))
     priceInput.value = String(currentPrice * quantityValue)
 
     if (priceOld) {
 
-        priceOld.innerHTML = String(currentPriceOld * quantityValue)
+        priceOld.innerHTML = new Intl.NumberFormat('ru').format(String(currentPriceOld * quantityValue))
         priceInputOld.value = String(currentPriceOld * quantityValue)
 
     }
@@ -45,12 +45,12 @@ const quantityDecrease = (event) => {
     --quantityValue
     quantity.value = String(quantityValue)
 
-    price.innerText = String(currentPrice * quantityValue)
+    price.innerText = new Intl.NumberFormat('ru').format(String(currentPrice * quantityValue))
     priceInput.value = String(currentPrice * quantityValue)
 
     if (priceOld) {
 
-        priceOld.innerHTML = String(currentPriceOld * quantityValue)
+        priceOld.innerHTML = new Intl.NumberFormat('ru').format(String(currentPriceOld * quantityValue))
         priceInputOld.value = String(currentPriceOld * quantityValue)
 
     }
@@ -59,12 +59,12 @@ const quantityDecrease = (event) => {
 
         quantity.value = '1'
 
-        price.innerText = currentPrice
+        price.innerText = new Intl.NumberFormat('ru').format(currentPrice)
         priceInput.value = currentPrice
 
         if (priceOld) {
 
-            priceOld.innerHTML = currentPriceOld
+            priceOld.innerHTML = new Intl.NumberFormat('ru').format(currentPriceOld)
             priceInputOld.value = currentPriceOld
 
         }

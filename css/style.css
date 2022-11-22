@@ -5404,6 +5404,7 @@ a.accordion__title--active {
     outline        : none;
     border         : none;
     text-decoration: none;
+    cursor         : pointer;
 }
 
 .catalog__btn:hover {
