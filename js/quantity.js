@@ -1,6 +1,8 @@
 const price = document.querySelector('.-price-')
 const priceInput = document.querySelector('.-price-input-')
 let currentPrice = Number(price.textContent)
+
+price.innerText = new Intl.NumberFormat('ru').format(String(currentPrice))
 priceInput.value = currentPrice
 
 const priceOld = document.querySelector('.-price-old-')
@@ -10,6 +12,7 @@ let currentPriceOld
 if (priceOld) {
 
     currentPriceOld = Number(priceOld.textContent)
+    priceOld.innerHTML = new Intl.NumberFormat('ru').format(String(currentPriceOld))
     priceInputOld.value = currentPriceOld
 
 }
