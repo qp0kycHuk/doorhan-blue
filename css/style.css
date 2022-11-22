@@ -5454,6 +5454,11 @@ a.accordion__title--active {
     opacity        : 1;
 }
 
+.catalog__subtitle {
+    margin-top   : 0;
+    margin-bottom: 15px;
+}
+
 .catalog__txt {
     font-family: 'SF Pro Display';
     font-style : normal;
