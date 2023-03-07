@@ -1606,7 +1606,8 @@ nav {
 }
 
 .accessories-block-slider {
-    position: relative;
+    position     : relative;
+    margin-bottom: 46px;
 }
 
 .accessories-block-slider .image-slider__image {
@@ -1663,6 +1664,11 @@ nav {
     margin-bottom: 35px;
 }
 
+.accessories__btn {
+    margin   : 0 auto;
+    max-width: 235px;
+}
+
 @media(max-width: 1120px) {
     .accessories-block {
         width: 90%;
@@ -1670,6 +1676,10 @@ nav {
 }
 
 @media(max-width: 760px) {
+    .accessories-block-slider {
+        margin-bottom: 30px;
+    }
+
     .accessories-block-slider .image-slider__image {
         text-align: center;
     }
@@ -5098,7 +5108,7 @@ nav {
     display      : flex;
     align-items  : center;
     grid-gap     : 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .navigation__item {
@@ -5131,7 +5141,8 @@ a.navigation__item:hover {
 }
 
 .catalog__head {
-    padding   : 40px 0;
+    text-align: center;
+    padding   : 27px 0;
     background: url('../img/voln-catalog.png') no-repeat 100% 100%;
 }
 
@@ -5150,12 +5161,16 @@ a.navigation__item:hover {
     display        : flex;
     justify-content: space-between;
     grid-gap       : 35px;
-    margin-bottom  : 40px;
 }
 
 .catalog__nav-bar {
     width    : 100%;
     max-width: 300px;
+}
+
+.catalog__sticky {
+    top     : 20px;
+    position: sticky;
 }
 
 .accordion {
@@ -5167,38 +5182,21 @@ a.navigation__item:hover {
     margin-bottom : 16px;
 }
 
-.accordion:last-child {
-    margin-bottom: 0;
-}
-
 .accordion__item {
     padding-bottom: 10px;
     margin-bottom : 10px;
     border-bottom : 1px solid rgba(219, 219, 219, 0.4);
 }
 
-.accordion__item:is([data-accordion="active"])>.accordion__head .accordion__arrow,
-.accordion__item:is([data-child="active"])>.accordion__head .accordion__arrow {
-    transform: rotate(90deg);
+.accordion__item[data-accordion="active"]>.accordion__head .accordion__arrow,
+.accordion__child[data-accordion="active"]>.accordion__head .accordion__arrow {
+    transform: rotate(-90deg);
 }
 
 .accordion__item:last-child {
     margin-bottom : 0;
     padding-bottom: 0;
     border        : none;
-}
-
-.accordion__item .accordion__item:first-child {
-    margin-top: 10px;
-}
-
-a.accordion__item {
-    text-decoration: none;
-    max-width      : max-content;
-}
-
-a.accordion__item:hover {
-    text-decoration: underline;
 }
 
 .accordion__head {
@@ -5218,21 +5216,8 @@ a.accordion__item:hover {
     color      : #2B3139;
 }
 
-.accordion__title--bold {
-    font-weight: 700;
-}
-
-a.accordion__title--active {
+.accordion__title--active {
     text-decoration: underline;
-}
-
-.accordion__subtitle {
-    font-family: 'SF Pro Display';
-    font-style : normal;
-    font-weight: 400;
-    font-size  : 14px;
-    line-height: 17px;
-    color      : #2B3139;
 }
 
 .accordion__arrow {
@@ -5245,12 +5230,27 @@ a.accordion__title--active {
     transition: 0.3s;
 }
 
+.accordion__child {
+    margin-top: 16px;
+}
+
+.accordion__child .accordion__content>.accordion__child {
+    padding-left: 25px;
+}
+
+.accordion__subtitle {
+    font-family: 'SF Pro Display';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 17px;
+    color      : #2B3139;
+}
+
 .accordion__links {
-    padding-top   : 16px;
     display       : flex;
     flex-direction: column;
-    padding-left  : 20px;
-    margin-bottom : 12px;
+    margin-top    : 16px;
 }
 
 .accordion__link {
@@ -5267,18 +5267,8 @@ a.accordion__title--active {
     width          : max-content;
 }
 
-.accordion__link--active {
-    text-decoration: underline;
-    font-weight    : bold;
-    pointer-events : none;
-}
-
 .accordion__link:last-child {
     margin-bottom: 0;
-}
-
-.accordion__link:hover {
-    text-decoration: underline;
 }
 
 .accordion__link::before {
@@ -5292,15 +5282,16 @@ a.accordion__title--active {
     background   : #C9CCD4;
 }
 
-.accordion__name {
-    font-family   : 'SF Pro Display';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 16px;
-    line-height   : 19px;
-    text-transform: uppercase;
-    color         : #2B3139;
-    margin-bottom : 22px;
+.accordion__title:hover,
+.accordion__subtitle:hover,
+.accordion__link:hover {
+    text-decoration: underline;
+}
+
+.accordion__link--active {
+    text-decoration: underline;
+    font-weight    : bold;
+    pointer-events : none;
 }
 
 .catalog__main {
@@ -5405,6 +5396,7 @@ a.accordion__title--active {
     border         : none;
     text-decoration: none;
     cursor         : pointer;
+    width          : 100%;
 }
 
 .catalog__btn:hover {
@@ -5467,6 +5459,59 @@ a.accordion__title--active {
     line-height: 24px;
     color      : #2B3139;
     margin-top : 12px;
+}
+
+.catalog-banner {
+    position     : relative;
+    border-radius: 10px;
+    overflow     : hidden;
+    background   : linear-gradient(90deg, rgba(255, 255, 255, 0.7) -15.92%, rgba(255, 255, 255, 0) 105.31%), rgba(238, 164, 53, 0.6);
+}
+
+.catalog-banner__bg {
+    position: absolute;
+    inset   : 0;
+    overflow: hidden;
+}
+
+.catalog-banner__image {
+    position  : absolute;
+    inset     : 0;
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+}
+
+.catalog-banner__content {
+    display       : flex;
+    flex-direction: column;
+    position      : relative;
+    padding       : 24px;
+}
+
+.catalog-banner__title {
+    font-family  : 'SF Pro Display';
+    font-style   : normal;
+    font-weight  : 700;
+    font-size    : 28px;
+    line-height  : 33px;
+    color        : #2B3139;
+    margin-bottom: 16px;
+}
+
+.catalog-banner__text {
+    font-family  : 'SF Pro Display';
+    font-style   : normal;
+    font-weight  : 400;
+    font-size    : 16px;
+    line-height  : 140%;
+    color        : #2B3139;
+    opacity      : 0.8;
+    margin-bottom: 26px;
+}
+
+.catalog-banner__btn {
+    max-width: 210px;
 }
 
 @media(max-width: 1200px) {
@@ -5703,6 +5748,38 @@ a.accordion__title--active {
     padding  : 12px;
 }
 
+.card-detail__shildik {
+    width        : 100%;
+    max-width    : 470px;
+    background   : #EAEDF0;
+    border-radius: 10px;
+    padding      : 8px;
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 23px;
+}
+
+.card-detail__square {
+    background     : #FFFFFF;
+    border-radius  : 10px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    min-width      : 42px;
+    width          : 42px;
+    height         : 42px;
+    margin-right   : 16px;
+}
+
+.card-detail__shildik-text {
+    font-family: 'SF Pro Display';
+    font-style : normal;
+    font-weight: 600;
+    font-size  : 16px;
+    line-height: 19px;
+    color      : #2B3139;
+}
+
 .card-detail__specifications {
     font-family  : 'SF Pro Display';
     font-style   : normal;
@@ -5710,7 +5787,16 @@ a.accordion__title--active {
     font-size    : 16px;
     line-height  : 19px;
     color        : #2B3139;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.card-detail__description {
+    font-family: 'SF Pro Display';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 24px;
+    color      : #2B3139;
 }
 
 .card-detail__items {
@@ -5785,10 +5871,6 @@ a.accordion__title--active {
     background: #E97A13;
 }
 
-.tab {
-    max-width: 790px;
-}
-
 .tab__items {
     display      : flex;
     align-items  : center;
@@ -5826,15 +5908,21 @@ a.accordion__title--active {
 
 .tab__radio--1:checked~.tab__items .tab__item--1,
 .tab__radio--2:checked~.tab__items .tab__item--2,
-.tab__radio--3:checked~.tab__items .tab__item--3 {
+.tab__radio--3:checked~.tab__items .tab__item--3,
+.tab__radio--4:checked~.tab__items .tab__item--4 {
     color        : rgba(56, 56, 56, 1);
     border-bottom: 2px solid #E97A13;
 }
 
 .tab__radio--1:checked~.tab__cards .tab__card--1,
 .tab__radio--2:checked~.tab__cards .tab__card--2,
-.tab__radio--3:checked~.tab__cards .tab__card--3 {
+.tab__radio--3:checked~.tab__cards .tab__card--3,
+.tab__radio--4:checked~.tab__cards .tab__card--4 {
     display: block;
+}
+
+.tab__production {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .card-detail__text {
@@ -5857,6 +5945,10 @@ a.accordion__title--active {
 }
 
 @media(max-width: 900px) {
+    .tab__production {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .card-detail__content {
         flex-direction : column;
         align-items    : flex-start;
@@ -5865,7 +5957,21 @@ a.accordion__title--active {
     }
 }
 
+@media(max-width: 768px) {
+    .tab__items {
+        flex-direction: column;
+    }
+
+    .tab__item {
+        width: 100%;
+    }
+}
+
 @media(max-width: 576px) {
+    .tab__production {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .card-detail__sliders {
         max-width: 100%;
     }
@@ -5882,14 +5988,6 @@ a.accordion__title--active {
     .card-detail__elems {
         grid-gap     : 15px;
         margin-bottom: 20px;
-    }
-
-    .tab__items {
-        flex-direction: column;
-    }
-
-    .tab__item {
-        width: 100%;
     }
 
     .card-detail__name,
@@ -5973,6 +6071,87 @@ a.accordion__title--active {
     }
 
     .catalog__empty-subtitle {
+        font-size: 14px;
+    }
+}
+
+.advantages {
+    display       : flex;
+    flex-direction: column;
+    grid-gap      : 30px;
+}
+
+.advantages__item {
+    display    : flex;
+    align-items: center;
+}
+
+.advantages__square {
+    min-width      : 68px;
+    width          : 68px;
+    height         : 68px;
+    background     : linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%), #E97A13;
+    border-radius  : 16px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    margin-right   : 16px;
+}
+
+.advantages__square img {
+    width: 36px;
+}
+
+.advantages__content {
+    display       : flex;
+    flex-direction: column;
+}
+
+.advantages__title {
+    font-family  : 'SF Pro Display';
+    font-style   : normal;
+    font-weight  : 700;
+    font-size    : 18px;
+    line-height  : 21px;
+    color        : #2B3139;
+    margin-bottom: 6px;
+}
+
+.advantages__text {
+    font-family: 'SF Pro Display';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 16px;
+    line-height: 19px;
+    color      : #2B3139;
+}
+
+@media(max-width: 576px) {
+    .advantages {
+        grid-gap: 16px;
+    }
+
+    .advantages__item {
+        align-items: flex-start;
+    }
+
+    .advantages__square {
+        min-width    : 40px;
+        width        : 40px;
+        height       : 40px;
+        border-radius: 8px;
+        margin-right : 8px;
+    }
+
+    .advantages__square img {
+        width: 20px;
+    }
+
+    .advantages__title {
+        font-size: 16px;
+    }
+
+    .advantages__text {
         font-size: 14px;
     }
 }

@@ -1,72 +1,79 @@
-const accordions = document.querySelectorAll('*[data-accordion]')
+const setAccordion = (element) => {
 
-accordions.forEach((item) => {
+    const accordion = element
+    const toggle = accordion.querySelector('*[data-accordion-toggle]')
+    const content = accordion.querySelector('*[data-accordion-content]')
+    const accordionItems = accordion.querySelectorAll('*[data-accordion]')
 
-    const accordion = item
-    const accordionItem = item.querySelectorAll('*[data-child]')
-    const toggle = accordion.querySelector('*[data-toggle]')
-    const content = accordion.querySelector('*[data-content]')
+    const setAccordionHeight = () => {
 
-    if (accordion.dataset.accordion == 'hidden') content.style.height = '0'
+        if (accordion.dataset.accordion == 'hidden') {
 
-    if (accordion.dataset.accordion == 'active') content.style.height = `${content.scrollHeight}px`
+            content.style.maxHeight = '0'
+
+        } else {
+
+            content.style.maxHeight = `${content.scrollHeight}px`
+
+        }
+
+    }
+
+    setAccordionHeight()
 
     toggle.addEventListener('click', () => {
 
         if (accordion.dataset.accordion == 'hidden') {
 
             accordion.dataset.accordion = 'active'
-            content.style.height = `${content.scrollHeight}px`
+
+            setAccordionHeight()
 
         } else {
 
             accordion.dataset.accordion = 'hidden'
-            content.style.height = '0'
+
+            setAccordionHeight()
 
         }
 
     })
 
-    accordionItem.forEach(el => {
+    accordionItems.forEach((element) => {
 
-        const childToggle = el.querySelector('*[data-child-toggle]')
-        const childContent = el.querySelector('*[data-child-content]')
+        const accordionItem = element
 
-        if (el.dataset.child == 'hidden') {
+        if (!accordionItem) return
 
-            childContent.style.height = '0'
-            content.style.height = `auto`
+        const accordionItemToggle = accordionItem.querySelector('*[data-accordion-toggle]')
+        const accordionItemContent = accordionItem.querySelector('*[data-accordion-content]')
 
-            if (accordion.dataset.accordion == 'hidden') content.style.height = '0'
+        accordionItemToggle.addEventListener('click', () => {
 
-        }
+            if (accordionItem.dataset.accordion == 'hidden') {
 
-        if (el.dataset.child == 'active') {
+                content.style.maxHeight = `${content.scrollHeight + accordionItemContent.scrollHeight}px`
 
-            childContent.style.height = `${childContent.scrollHeight}px`
-            content.style.height = `${content.scrollHeight + childContent.scrollHeight}px`
-
-            if (accordion.dataset.accordion == 'active') content.style.height = 'auto'
-            
-        }
-
-        childToggle.addEventListener('click', () => {
-
-            if (el.dataset.child == 'hidden') {
-
-                el.dataset.child = 'active'
-                childContent.style.height = `${childContent.scrollHeight}px`
-                content.style.height = `${content.scrollHeight + childContent.scrollHeight}px`
             } else {
 
-                el.dataset.child = 'hidden'
-                childContent.style.height = '0'
-                content.style.height = `${content.scrollHeight - childContent.scrollHeight}px`
+                content.style.maxHeight = `${content.scrollHeight - accordionItemContent.scrollHeight}px`
 
             }
 
         })
 
     })
+
+}
+
+const accordions = document.querySelectorAll('*[data-accordion]')
+
+accordions.forEach((element) => {
+
+    const accordion = element
+
+    if (!accordion) return
+
+    setAccordion(accordion)
 
 })
