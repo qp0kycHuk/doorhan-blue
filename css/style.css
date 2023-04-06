@@ -5213,7 +5213,7 @@ a.navigation__item:hover {
     font-family: 'SF Pro Display';
     font-style : normal;
     font-weight: 600;
-    font-size  : 14px;
+    font-size  : 18px;
     line-height: 17px;
     color      : #2B3139;
 }
@@ -5488,7 +5488,7 @@ a.navigation__item:hover {
     display       : flex;
     flex-direction: column;
     position      : relative;
-    padding       : 24px;
+    padding       : 20px;
 }
 
 .catalog-banner__title {
