@@ -162,6 +162,11 @@ const cardDetailBullets = new Swiper('.card-detail-bullets .swiper-container', {
 })
 
 const cardDetailSlider = new Swiper('.card-detail-slider .swiper-container', {
+    navigation: {
+        nextEl: '.card-detail-slider .swiper-button-next',
+        prevEl: '.card-detail-slider .swiper-button-prev'
+    },
+
     slidesPerView: 1,
     watchSlidesProgress: true,
     spaceBetween: 20,

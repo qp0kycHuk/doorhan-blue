@@ -5110,7 +5110,7 @@ nav {
     display      : flex;
     align-items  : center;
     grid-gap     : 5px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .navigation__item {
@@ -5598,6 +5598,22 @@ a.navigation__item:hover {
     margin-bottom: 6px;
 }
 
+.card-detail-slider .swiper-button-prev::after {
+    left: -40px;
+}
+
+.card-detail-slider .swiper-button-next::after {
+    right: -40px;
+}
+
+@media(max-width: 576px) {
+
+    .card-detail-slider .swiper-button-prev,
+    .card-detail-slider .swiper-button-next {
+        display: none;
+    }
+}
+
 .card-detail-slider__shildig {
     display        : flex;
     align-items    : center;
@@ -5734,15 +5750,22 @@ a.navigation__item:hover {
     color      : #2B3139;
 }
 
+.card-detail__price-text {
+    font-size: 0.7em;
+}
+
 .card-detail__price-old {
-    font-family         : 'BuyanBold';
-    font-style          : normal;
-    font-weight         : 400;
-    font-size           : 32px;
-    line-height         : 130%;
+    font-family: 'BuyanBold';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 32px;
+    line-height: 130%;
+    color      : #2B3139;
+    opacity    : 0.6;
+}
+
+.card-detail__price-old-val {
     text-decoration-line: line-through;
-    color               : #2B3139;
-    opacity             : 0.6;
 }
 
 .card-detail__btn {
