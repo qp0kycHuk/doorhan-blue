@@ -6,7 +6,7 @@ const sendingData = (event) => {
 
     const formData = new FormData(form)
     const queryString = new URLSearchParams(formData).toString()
-    const requestUrl = `/modal/form-modal.html?${queryString}`
+    const requestUrl = `/local/ajax/modal/form-modal-shop.php?${queryString}`
     const submitBtn = form.querySelector('button[type="submit"]')
 
     submitBtn.setAttribute('disabled', 'disabled')
