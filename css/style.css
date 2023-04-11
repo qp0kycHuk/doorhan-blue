@@ -5513,7 +5513,7 @@ a.navigation__item:hover {
 }
 
 .catalog-banner__btn {
-    max-width: 210px;
+    width: 100%;
 }
 
 @media(max-width: 1200px) {
