@@ -5464,10 +5464,10 @@ a.navigation__item:hover {
 }
 
 .catalog-banner {
-    position     : relative;
-    border-radius: 10px;
-    overflow     : hidden;
-    background   : linear-gradient(90deg, rgba(255, 255, 255, 0.7) -15.92%, rgba(255, 255, 255, 0) 105.31%), rgba(238, 164, 53, 0.6);
+    position        : relative;
+    border-radius   : 10px;
+    overflow        : hidden;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.7) -15.92%, rgba(255, 255, 255, 0) 105.31%);
 }
 
 .catalog-banner__bg {
