@@ -5222,6 +5222,10 @@ a.navigation__item:hover {
     text-decoration: underline;
 }
 
+.accordion__title--underline-none {
+    text-decoration: none;
+}
+
 .accordion__arrow {
     width     : 20px;
     transition: 0.2s;
