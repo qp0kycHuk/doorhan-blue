@@ -5472,6 +5472,11 @@ a.navigation__item:hover {
     border-radius   : 10px;
     overflow        : hidden;
     background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.7) -15.92%, rgba(255, 255, 255, 0) 105.31%);
+    margin-bottom   : 20px;
+}
+
+.catalog-banner:last-child {
+    margin-bottom: 0;
 }
 
 .catalog-banner__bg {
