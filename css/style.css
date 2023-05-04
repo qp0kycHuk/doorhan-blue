@@ -1668,7 +1668,8 @@ nav {
     text-align     : center;
     text-decoration: none;
     margin         : 0 auto;
-    max-width      : 235px;
+    width          : 100%;
+    max-width      : 280px;
 }
 
 @media(max-width: 1120px) {
