@@ -5144,9 +5144,14 @@ a.navigation__item:hover {
 }
 
 .catalog__head {
-    text-align: center;
-    padding   : 27px 0;
-    background: url('../img/voln-catalog.png') no-repeat 100% 100%;
+    text-align     : center;
+    padding        : 27px 0;
+    background     : #EC892D url('../img/voln-catalog.png') no-repeat center;
+    background-size: cover;
+}
+
+.catalog__head .page--title {
+    color: #fff;
 }
 
 .catalog__container {
