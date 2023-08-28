@@ -616,8 +616,12 @@ nav {
 .company-chb {
     position: absolute;
     top: 0;
-    right: 165px;
+    right: 0;
     z-index: 5;
+}
+
+.company-chb--right{
+    right: -322px;
 }
 
 .company-chb__img {
