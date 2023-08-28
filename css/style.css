@@ -641,6 +641,11 @@ nav {
     /* right   : 384px; */
     left: 37%;
 }
+.company-dor-automatic {
+    top: 170px;
+    /* right   : 384px; */
+    left: 40%;
+}
 
 .company-dor__img {
     width: auto;
