@@ -652,6 +652,10 @@ nav {
     left: 37%;
 }
 
+.company-dor-calitki{
+    top: 45px;
+}
+
 .company-dor-automatic {
     top: 170px;
     /* right   : 384px; */
@@ -3224,7 +3228,8 @@ nav {
 }
 
 .hit-block-title {
-    max-width: 510px;
+    max-width: 100%;
+    width: max-content;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 46px;
@@ -3404,6 +3409,7 @@ nav {
     width: 250px;
     height: 123px;
     position: relative;
+    margin-left: -4px;
 }
 
 .approach__image {
@@ -3411,6 +3417,9 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
+    object-fit: scale-down;
+    object-position: left bottom;
+    border-radius: 0 0 0 16px;
 }
 
 .approach__banner-info {
