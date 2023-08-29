@@ -51,6 +51,8 @@ body {
     font-style: normal;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
 .page--botton:hover {
@@ -467,6 +469,14 @@ nav {
     }
 }
 
+.section-padding {
+    padding: 75px 0;
+}
+
+.section-gray{
+    background-color: #EAEDF0;
+}
+
 /* Мобильное меню */
 .menu {
     visibility: hidden;
@@ -620,7 +630,7 @@ nav {
     z-index: 5;
 }
 
-.company-chb--right{
+.company-chb--right {
     right: -322px;
 }
 
@@ -641,6 +651,7 @@ nav {
     /* right   : 384px; */
     left: 37%;
 }
+
 .company-dor-automatic {
     top: 170px;
     /* right   : 384px; */
