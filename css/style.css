@@ -194,7 +194,7 @@ nav {
 }
 
 .nav-block__logo {
-    width: 137px;
+    width: 115px;
 }
 
 .nav-block-ul {
@@ -5232,7 +5232,10 @@ a.navigation__item:hover {
     width: 100%;
     max-width: 300px;
 }
-
+.catalog__nav-bar
+.accordion__title{
+    font-size: 14px;
+}
 .catalog__sticky {
     top: 20px;
     position: sticky;
@@ -5492,7 +5495,6 @@ a.navigation__item:hover {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    text-decoration-line: underline;
     color: #1A1A1A;
     opacity: 0.8;
     border: 1px solid #CFCFCF;
