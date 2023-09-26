@@ -173,20 +173,19 @@ nav {
     width: 100%;
     background-color: #fff;
     border-bottom: 2px solid #EAEDF0;
-}
-
-.fixed {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-    transition: 0.3s linear top;
+    transition: 0.3s linear;
+    transform: translateY(var(--top));
     z-index: 150;
 }
 
 .nav-block {
     width: 1120px;
-    margin: 15px auto;
+    padding: 15px 0;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 137px 1fr 160px 134px;
     grid-gap: 30px;
