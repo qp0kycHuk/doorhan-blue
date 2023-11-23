@@ -2975,6 +2975,8 @@ nav {
 .models-block-grid-fon__sign b {
     font-size: 18px;
     font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .models-block-footer {
